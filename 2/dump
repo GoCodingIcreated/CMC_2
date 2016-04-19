@@ -1,0 +1,2133 @@
+
+4.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_ZN7numbersplENS_7complexES0_>:
+       0:	55                   	push   rbp
+       1:	48 89 e5             	mov    rbp,rsp
+       4:	48 83 ec 60          	sub    rsp,0x60
+       8:	66 0f 28 e1          	movapd xmm4,xmm1
+       c:	66 0f 28 cb          	movapd xmm1,xmm3
+      10:	f2 0f 11 45 d0       	movsd  QWORD PTR [rbp-0x30],xmm0
+      15:	f2 0f 11 65 d8       	movsd  QWORD PTR [rbp-0x28],xmm4
+      1a:	f2 0f 11 55 c0       	movsd  QWORD PTR [rbp-0x40],xmm2
+      1f:	f2 0f 11 4d c8       	movsd  QWORD PTR [rbp-0x38],xmm1
+      24:	f2 0f 10 4d d8       	movsd  xmm1,QWORD PTR [rbp-0x28]
+      29:	f2 0f 10 45 c8       	movsd  xmm0,QWORD PTR [rbp-0x38]
+      2e:	f2 0f 58 c8          	addsd  xmm1,xmm0
+      32:	f2 0f 10 55 d0       	movsd  xmm2,QWORD PTR [rbp-0x30]
+      37:	f2 0f 10 45 c0       	movsd  xmm0,QWORD PTR [rbp-0x40]
+      3c:	f2 0f 58 c2          	addsd  xmm0,xmm2
+      40:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+      44:	48 89 c7             	mov    rdi,rax
+      47:	e8 00 00 00 00       	call   4c <_ZN7numbersplENS_7complexES0_+0x4c>
+			48: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+      4c:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+      50:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+      54:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+      58:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+      5c:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+      60:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+      64:	48 89 55 a8          	mov    QWORD PTR [rbp-0x58],rdx
+      68:	f2 0f 10 45 a8       	movsd  xmm0,QWORD PTR [rbp-0x58]
+      6d:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+      71:	f2 0f 10 4d a8       	movsd  xmm1,QWORD PTR [rbp-0x58]
+      76:	c9                   	leave  
+      77:	c3                   	ret    
+
+0000000000000078 <_ZN7numbersmiENS_7complexES0_>:
+      78:	55                   	push   rbp
+      79:	48 89 e5             	mov    rbp,rsp
+      7c:	48 83 ec 60          	sub    rsp,0x60
+      80:	66 0f 28 e1          	movapd xmm4,xmm1
+      84:	66 0f 28 cb          	movapd xmm1,xmm3
+      88:	f2 0f 11 45 d0       	movsd  QWORD PTR [rbp-0x30],xmm0
+      8d:	f2 0f 11 65 d8       	movsd  QWORD PTR [rbp-0x28],xmm4
+      92:	f2 0f 11 55 c0       	movsd  QWORD PTR [rbp-0x40],xmm2
+      97:	f2 0f 11 4d c8       	movsd  QWORD PTR [rbp-0x38],xmm1
+      9c:	f2 0f 10 45 d8       	movsd  xmm0,QWORD PTR [rbp-0x28]
+      a1:	f2 0f 10 4d c8       	movsd  xmm1,QWORD PTR [rbp-0x38]
+      a6:	66 0f 28 d0          	movapd xmm2,xmm0
+      aa:	f2 0f 5c d1          	subsd  xmm2,xmm1
+      ae:	66 0f 28 ca          	movapd xmm1,xmm2
+      b2:	f2 0f 10 45 d0       	movsd  xmm0,QWORD PTR [rbp-0x30]
+      b7:	f2 0f 10 55 c0       	movsd  xmm2,QWORD PTR [rbp-0x40]
+      bc:	f2 0f 5c c2          	subsd  xmm0,xmm2
+      c0:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+      c4:	48 89 c7             	mov    rdi,rax
+      c7:	e8 00 00 00 00       	call   cc <_ZN7numbersmiENS_7complexES0_+0x54>
+			c8: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+      cc:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+      d0:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+      d4:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+      d8:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+      dc:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+      e0:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+      e4:	48 89 55 a8          	mov    QWORD PTR [rbp-0x58],rdx
+      e8:	f2 0f 10 45 a8       	movsd  xmm0,QWORD PTR [rbp-0x58]
+      ed:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+      f1:	f2 0f 10 4d a8       	movsd  xmm1,QWORD PTR [rbp-0x58]
+      f6:	c9                   	leave  
+      f7:	c3                   	ret    
+
+00000000000000f8 <_ZN7numbersmlENS_7complexES0_>:
+      f8:	55                   	push   rbp
+      f9:	48 89 e5             	mov    rbp,rsp
+      fc:	48 83 ec 60          	sub    rsp,0x60
+     100:	66 0f 28 e1          	movapd xmm4,xmm1
+     104:	66 0f 28 cb          	movapd xmm1,xmm3
+     108:	f2 0f 11 45 d0       	movsd  QWORD PTR [rbp-0x30],xmm0
+     10d:	f2 0f 11 65 d8       	movsd  QWORD PTR [rbp-0x28],xmm4
+     112:	f2 0f 11 55 c0       	movsd  QWORD PTR [rbp-0x40],xmm2
+     117:	f2 0f 11 4d c8       	movsd  QWORD PTR [rbp-0x38],xmm1
+     11c:	f2 0f 10 4d c0       	movsd  xmm1,QWORD PTR [rbp-0x40]
+     121:	f2 0f 10 45 d8       	movsd  xmm0,QWORD PTR [rbp-0x28]
+     126:	f2 0f 59 c8          	mulsd  xmm1,xmm0
+     12a:	f2 0f 10 55 c8       	movsd  xmm2,QWORD PTR [rbp-0x38]
+     12f:	f2 0f 10 45 d0       	movsd  xmm0,QWORD PTR [rbp-0x30]
+     134:	f2 0f 59 c2          	mulsd  xmm0,xmm2
+     138:	f2 0f 58 c8          	addsd  xmm1,xmm0
+     13c:	f2 0f 10 55 d0       	movsd  xmm2,QWORD PTR [rbp-0x30]
+     141:	f2 0f 10 45 c0       	movsd  xmm0,QWORD PTR [rbp-0x40]
+     146:	f2 0f 59 c2          	mulsd  xmm0,xmm2
+     14a:	f2 0f 10 5d d8       	movsd  xmm3,QWORD PTR [rbp-0x28]
+     14f:	f2 0f 10 55 c8       	movsd  xmm2,QWORD PTR [rbp-0x38]
+     154:	f2 0f 59 d3          	mulsd  xmm2,xmm3
+     158:	f2 0f 5c c2          	subsd  xmm0,xmm2
+     15c:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+     160:	48 89 c7             	mov    rdi,rax
+     163:	e8 00 00 00 00       	call   168 <_ZN7numbersmlENS_7complexES0_+0x70>
+			164: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+     168:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+     16c:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+     170:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     174:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+     178:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+     17c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+     180:	48 89 55 a8          	mov    QWORD PTR [rbp-0x58],rdx
+     184:	f2 0f 10 45 a8       	movsd  xmm0,QWORD PTR [rbp-0x58]
+     189:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+     18d:	f2 0f 10 4d a8       	movsd  xmm1,QWORD PTR [rbp-0x58]
+     192:	c9                   	leave  
+     193:	c3                   	ret    
+
+0000000000000194 <_ZN7numbersdvENS_7complexES0_>:
+     194:	55                   	push   rbp
+     195:	48 89 e5             	mov    rbp,rsp
+     198:	48 83 ec 70          	sub    rsp,0x70
+     19c:	66 0f 28 e1          	movapd xmm4,xmm1
+     1a0:	66 0f 28 cb          	movapd xmm1,xmm3
+     1a4:	f2 0f 11 45 d0       	movsd  QWORD PTR [rbp-0x30],xmm0
+     1a9:	f2 0f 11 65 d8       	movsd  QWORD PTR [rbp-0x28],xmm4
+     1ae:	f2 0f 11 55 c0       	movsd  QWORD PTR [rbp-0x40],xmm2
+     1b3:	f2 0f 11 4d c8       	movsd  QWORD PTR [rbp-0x38],xmm1
+     1b8:	f2 0f 10 4d c0       	movsd  xmm1,QWORD PTR [rbp-0x40]
+     1bd:	f2 0f 10 45 d8       	movsd  xmm0,QWORD PTR [rbp-0x28]
+     1c2:	f2 0f 59 c1          	mulsd  xmm0,xmm1
+     1c6:	f2 0f 10 55 d0       	movsd  xmm2,QWORD PTR [rbp-0x30]
+     1cb:	f2 0f 10 4d c8       	movsd  xmm1,QWORD PTR [rbp-0x38]
+     1d0:	f2 0f 59 ca          	mulsd  xmm1,xmm2
+     1d4:	66 0f 28 d0          	movapd xmm2,xmm0
+     1d8:	f2 0f 5c d1          	subsd  xmm2,xmm1
+     1dc:	f2 0f 11 55 a8       	movsd  QWORD PTR [rbp-0x58],xmm2
+     1e1:	48 8d 45 c0          	lea    rax,[rbp-0x40]
+     1e5:	48 89 c7             	mov    rdi,rax
+     1e8:	e8 00 00 00 00       	call   1ed <_ZN7numbersdvENS_7complexES0_+0x59>
+			1e9: R_X86_64_PC32	_ZNK7numbers7complex4abs2Ev-0x4
+     1ed:	f2 0f 10 4d a8       	movsd  xmm1,QWORD PTR [rbp-0x58]
+     1f2:	f2 0f 5e c8          	divsd  xmm1,xmm0
+     1f6:	f2 0f 11 4d a0       	movsd  QWORD PTR [rbp-0x60],xmm1
+     1fb:	f2 0f 10 4d d0       	movsd  xmm1,QWORD PTR [rbp-0x30]
+     200:	f2 0f 10 45 c0       	movsd  xmm0,QWORD PTR [rbp-0x40]
+     205:	f2 0f 59 c8          	mulsd  xmm1,xmm0
+     209:	f2 0f 10 55 d8       	movsd  xmm2,QWORD PTR [rbp-0x28]
+     20e:	f2 0f 10 45 c8       	movsd  xmm0,QWORD PTR [rbp-0x38]
+     213:	f2 0f 59 c2          	mulsd  xmm0,xmm2
+     217:	66 0f 28 d1          	movapd xmm2,xmm1
+     21b:	f2 0f 58 d0          	addsd  xmm2,xmm0
+     21f:	f2 0f 11 55 98       	movsd  QWORD PTR [rbp-0x68],xmm2
+     224:	48 8d 45 c0          	lea    rax,[rbp-0x40]
+     228:	48 89 c7             	mov    rdi,rax
+     22b:	e8 00 00 00 00       	call   230 <_ZN7numbersdvENS_7complexES0_+0x9c>
+			22c: R_X86_64_PC32	_ZNK7numbers7complex4abs2Ev-0x4
+     230:	f2 0f 10 4d 98       	movsd  xmm1,QWORD PTR [rbp-0x68]
+     235:	f2 0f 5e c8          	divsd  xmm1,xmm0
+     239:	66 0f 28 c1          	movapd xmm0,xmm1
+     23d:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+     241:	f2 0f 10 4d a0       	movsd  xmm1,QWORD PTR [rbp-0x60]
+     246:	48 89 c7             	mov    rdi,rax
+     249:	e8 00 00 00 00       	call   24e <_ZN7numbersdvENS_7complexES0_+0xba>
+			24a: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+     24e:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+     252:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+     256:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     25a:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+     25e:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+     262:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+     266:	48 89 55 90          	mov    QWORD PTR [rbp-0x70],rdx
+     26a:	f2 0f 10 45 90       	movsd  xmm0,QWORD PTR [rbp-0x70]
+     26f:	48 89 45 90          	mov    QWORD PTR [rbp-0x70],rax
+     273:	f2 0f 10 4d 90       	movsd  xmm1,QWORD PTR [rbp-0x70]
+     278:	c9                   	leave  
+     279:	c3                   	ret    
+
+000000000000027a <_ZN7numbers4evalEPPcRKNS_7complexE>:
+     27a:	55                   	push   rbp
+     27b:	48 89 e5             	mov    rbp,rsp
+     27e:	53                   	push   rbx
+     27f:	48 81 ec a8 04 00 00 	sub    rsp,0x4a8
+     286:	48 89 bd 78 fb ff ff 	mov    QWORD PTR [rbp-0x488],rdi
+     28d:	48 89 b5 70 fb ff ff 	mov    QWORD PTR [rbp-0x490],rsi
+     294:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     29b:	48 89 c7             	mov    rdi,rax
+     29e:	e8 00 00 00 00       	call   2a3 <_ZN7numbers4evalEPPcRKNS_7complexE+0x29>
+			29f: R_X86_64_PC32	_ZN7numbers13complex_stackC1Ev-0x4
+     2a3:	48 8b 85 78 fb ff ff 	mov    rax,QWORD PTR [rbp-0x488]
+     2aa:	48 8b 00             	mov    rax,QWORD PTR [rax]
+     2ad:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+     2b1:	e9 03 0c 00 00       	jmp    eb9 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc3f>
+     2b6:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     2ba:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     2bd:	3c 2b                	cmp    al,0x2b
+     2bf:	0f 85 c7 01 00 00    	jne    48c <_ZN7numbers4evalEPPcRKNS_7complexE+0x212>
+     2c5:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     2cc:	48 89 c7             	mov    rdi,rax
+     2cf:	e8 00 00 00 00       	call   2d4 <_ZN7numbers4evalEPPcRKNS_7complexE+0x5a>
+			2d0: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     2d4:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     2db:	ff 
+     2dc:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     2e3:	ff 
+     2e4:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     2eb:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     2f2:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     2f9:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     300:	48 8d 85 a0 fb ff ff 	lea    rax,[rbp-0x460]
+     307:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     30e:	48 89 d6             	mov    rsi,rdx
+     311:	48 89 c7             	mov    rdi,rax
+     314:	e8 00 00 00 00       	call   319 <_ZN7numbers4evalEPPcRKNS_7complexE+0x9f>
+			315: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     319:	48 8d 95 a0 fb ff ff 	lea    rdx,[rbp-0x460]
+     320:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     327:	48 89 d6             	mov    rsi,rdx
+     32a:	48 89 c7             	mov    rdi,rax
+     32d:	e8 00 00 00 00       	call   332 <_ZN7numbers4evalEPPcRKNS_7complexE+0xb8>
+			32e: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     332:	48 8d 85 a0 fb ff ff 	lea    rax,[rbp-0x460]
+     339:	48 89 c7             	mov    rdi,rax
+     33c:	e8 00 00 00 00       	call   341 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc7>
+			33d: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     341:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     348:	48 89 c7             	mov    rdi,rax
+     34b:	e8 00 00 00 00       	call   350 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd6>
+			34c: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     350:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     357:	ff 
+     358:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     35f:	ff 
+     360:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     367:	48 89 85 50 ff ff ff 	mov    QWORD PTR [rbp-0xb0],rax
+     36e:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     375:	48 89 85 58 ff ff ff 	mov    QWORD PTR [rbp-0xa8],rax
+     37c:	f2 0f 10 95 50 ff ff 	movsd  xmm2,QWORD PTR [rbp-0xb0]
+     383:	ff 
+     384:	f2 0f 10 9d 58 ff ff 	movsd  xmm3,QWORD PTR [rbp-0xa8]
+     38b:	ff 
+     38c:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     393:	ff 
+     394:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     39b:	ff 
+     39c:	e8 00 00 00 00       	call   3a1 <_ZN7numbers4evalEPPcRKNS_7complexE+0x127>
+			39d: R_X86_64_PC32	_ZN7numbersplENS_7complexES0_-0x4
+     3a1:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     3a8:	ff 
+     3a9:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     3b0:	ff 
+     3b1:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     3b8:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     3bf:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     3c6:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     3cd:	48 8d 85 c0 fb ff ff 	lea    rax,[rbp-0x440]
+     3d4:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     3db:	48 89 d6             	mov    rsi,rdx
+     3de:	48 89 c7             	mov    rdi,rax
+     3e1:	e8 00 00 00 00       	call   3e6 <_ZN7numbers4evalEPPcRKNS_7complexE+0x16c>
+			3e2: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     3e6:	48 8d 95 c0 fb ff ff 	lea    rdx,[rbp-0x440]
+     3ed:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     3f4:	48 89 d6             	mov    rsi,rdx
+     3f7:	48 89 c7             	mov    rdi,rax
+     3fa:	e8 00 00 00 00       	call   3ff <_ZN7numbers4evalEPPcRKNS_7complexE+0x185>
+			3fb: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     3ff:	48 8d 85 c0 fb ff ff 	lea    rax,[rbp-0x440]
+     406:	48 89 c7             	mov    rdi,rax
+     409:	e8 00 00 00 00       	call   40e <_ZN7numbers4evalEPPcRKNS_7complexE+0x194>
+			40a: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     40e:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     415:	48 8d 85 e0 fb ff ff 	lea    rax,[rbp-0x420]
+     41c:	48 89 d6             	mov    rsi,rdx
+     41f:	48 89 c7             	mov    rdi,rax
+     422:	e8 00 00 00 00       	call   427 <_ZN7numbers4evalEPPcRKNS_7complexE+0x1ad>
+			423: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     427:	48 8d 85 00 fc ff ff 	lea    rax,[rbp-0x400]
+     42e:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     435:	ff 
+     436:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     43d:	ff 
+     43e:	48 8d 95 e0 fb ff ff 	lea    rdx,[rbp-0x420]
+     445:	48 89 d6             	mov    rsi,rdx
+     448:	48 89 c7             	mov    rdi,rax
+     44b:	e8 00 00 00 00       	call   450 <_ZN7numbers4evalEPPcRKNS_7complexE+0x1d6>
+			44c: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     450:	48 8d 95 00 fc ff ff 	lea    rdx,[rbp-0x400]
+     457:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     45e:	48 89 d6             	mov    rsi,rdx
+     461:	48 89 c7             	mov    rdi,rax
+     464:	e8 00 00 00 00       	call   469 <_ZN7numbers4evalEPPcRKNS_7complexE+0x1ef>
+			465: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     469:	48 8d 85 00 fc ff ff 	lea    rax,[rbp-0x400]
+     470:	48 89 c7             	mov    rdi,rax
+     473:	e8 00 00 00 00       	call   478 <_ZN7numbers4evalEPPcRKNS_7complexE+0x1fe>
+			474: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     478:	48 8d 85 e0 fb ff ff 	lea    rax,[rbp-0x420]
+     47f:	48 89 c7             	mov    rdi,rax
+     482:	e8 00 00 00 00       	call   487 <_ZN7numbers4evalEPPcRKNS_7complexE+0x20d>
+			483: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     487:	e9 17 0a 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     48c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     490:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     493:	3c 2d                	cmp    al,0x2d
+     495:	0f 85 c7 01 00 00    	jne    662 <_ZN7numbers4evalEPPcRKNS_7complexE+0x3e8>
+     49b:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     4a2:	48 89 c7             	mov    rdi,rax
+     4a5:	e8 00 00 00 00       	call   4aa <_ZN7numbers4evalEPPcRKNS_7complexE+0x230>
+			4a6: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     4aa:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     4b1:	ff 
+     4b2:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     4b9:	ff 
+     4ba:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     4c1:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     4c8:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     4cf:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     4d6:	48 8d 85 20 fc ff ff 	lea    rax,[rbp-0x3e0]
+     4dd:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     4e4:	48 89 d6             	mov    rsi,rdx
+     4e7:	48 89 c7             	mov    rdi,rax
+     4ea:	e8 00 00 00 00       	call   4ef <_ZN7numbers4evalEPPcRKNS_7complexE+0x275>
+			4eb: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     4ef:	48 8d 95 20 fc ff ff 	lea    rdx,[rbp-0x3e0]
+     4f6:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     4fd:	48 89 d6             	mov    rsi,rdx
+     500:	48 89 c7             	mov    rdi,rax
+     503:	e8 00 00 00 00       	call   508 <_ZN7numbers4evalEPPcRKNS_7complexE+0x28e>
+			504: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     508:	48 8d 85 20 fc ff ff 	lea    rax,[rbp-0x3e0]
+     50f:	48 89 c7             	mov    rdi,rax
+     512:	e8 00 00 00 00       	call   517 <_ZN7numbers4evalEPPcRKNS_7complexE+0x29d>
+			513: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     517:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     51e:	48 89 c7             	mov    rdi,rax
+     521:	e8 00 00 00 00       	call   526 <_ZN7numbers4evalEPPcRKNS_7complexE+0x2ac>
+			522: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     526:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     52d:	ff 
+     52e:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     535:	ff 
+     536:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     53d:	48 89 85 60 ff ff ff 	mov    QWORD PTR [rbp-0xa0],rax
+     544:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     54b:	48 89 85 68 ff ff ff 	mov    QWORD PTR [rbp-0x98],rax
+     552:	f2 0f 10 95 40 ff ff 	movsd  xmm2,QWORD PTR [rbp-0xc0]
+     559:	ff 
+     55a:	f2 0f 10 9d 48 ff ff 	movsd  xmm3,QWORD PTR [rbp-0xb8]
+     561:	ff 
+     562:	f2 0f 10 85 60 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xa0]
+     569:	ff 
+     56a:	f2 0f 10 8d 68 ff ff 	movsd  xmm1,QWORD PTR [rbp-0x98]
+     571:	ff 
+     572:	e8 00 00 00 00       	call   577 <_ZN7numbers4evalEPPcRKNS_7complexE+0x2fd>
+			573: R_X86_64_PC32	_ZN7numbersmiENS_7complexES0_-0x4
+     577:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     57e:	ff 
+     57f:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     586:	ff 
+     587:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     58e:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     595:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     59c:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     5a3:	48 8d 85 40 fc ff ff 	lea    rax,[rbp-0x3c0]
+     5aa:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     5b1:	48 89 d6             	mov    rsi,rdx
+     5b4:	48 89 c7             	mov    rdi,rax
+     5b7:	e8 00 00 00 00       	call   5bc <_ZN7numbers4evalEPPcRKNS_7complexE+0x342>
+			5b8: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     5bc:	48 8d 95 40 fc ff ff 	lea    rdx,[rbp-0x3c0]
+     5c3:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     5ca:	48 89 d6             	mov    rsi,rdx
+     5cd:	48 89 c7             	mov    rdi,rax
+     5d0:	e8 00 00 00 00       	call   5d5 <_ZN7numbers4evalEPPcRKNS_7complexE+0x35b>
+			5d1: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     5d5:	48 8d 85 40 fc ff ff 	lea    rax,[rbp-0x3c0]
+     5dc:	48 89 c7             	mov    rdi,rax
+     5df:	e8 00 00 00 00       	call   5e4 <_ZN7numbers4evalEPPcRKNS_7complexE+0x36a>
+			5e0: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     5e4:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     5eb:	48 8d 85 60 fc ff ff 	lea    rax,[rbp-0x3a0]
+     5f2:	48 89 d6             	mov    rsi,rdx
+     5f5:	48 89 c7             	mov    rdi,rax
+     5f8:	e8 00 00 00 00       	call   5fd <_ZN7numbers4evalEPPcRKNS_7complexE+0x383>
+			5f9: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     5fd:	48 8d 85 80 fc ff ff 	lea    rax,[rbp-0x380]
+     604:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     60b:	ff 
+     60c:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     613:	ff 
+     614:	48 8d 95 60 fc ff ff 	lea    rdx,[rbp-0x3a0]
+     61b:	48 89 d6             	mov    rsi,rdx
+     61e:	48 89 c7             	mov    rdi,rax
+     621:	e8 00 00 00 00       	call   626 <_ZN7numbers4evalEPPcRKNS_7complexE+0x3ac>
+			622: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     626:	48 8d 95 80 fc ff ff 	lea    rdx,[rbp-0x380]
+     62d:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     634:	48 89 d6             	mov    rsi,rdx
+     637:	48 89 c7             	mov    rdi,rax
+     63a:	e8 00 00 00 00       	call   63f <_ZN7numbers4evalEPPcRKNS_7complexE+0x3c5>
+			63b: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     63f:	48 8d 85 80 fc ff ff 	lea    rax,[rbp-0x380]
+     646:	48 89 c7             	mov    rdi,rax
+     649:	e8 00 00 00 00       	call   64e <_ZN7numbers4evalEPPcRKNS_7complexE+0x3d4>
+			64a: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     64e:	48 8d 85 60 fc ff ff 	lea    rax,[rbp-0x3a0]
+     655:	48 89 c7             	mov    rdi,rax
+     658:	e8 00 00 00 00       	call   65d <_ZN7numbers4evalEPPcRKNS_7complexE+0x3e3>
+			659: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     65d:	e9 41 08 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     662:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     666:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     669:	3c 2a                	cmp    al,0x2a
+     66b:	0f 85 c7 01 00 00    	jne    838 <_ZN7numbers4evalEPPcRKNS_7complexE+0x5be>
+     671:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     678:	48 89 c7             	mov    rdi,rax
+     67b:	e8 00 00 00 00       	call   680 <_ZN7numbers4evalEPPcRKNS_7complexE+0x406>
+			67c: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     680:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     687:	ff 
+     688:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     68f:	ff 
+     690:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     697:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     69e:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     6a5:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     6ac:	48 8d 85 a0 fc ff ff 	lea    rax,[rbp-0x360]
+     6b3:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     6ba:	48 89 d6             	mov    rsi,rdx
+     6bd:	48 89 c7             	mov    rdi,rax
+     6c0:	e8 00 00 00 00       	call   6c5 <_ZN7numbers4evalEPPcRKNS_7complexE+0x44b>
+			6c1: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     6c5:	48 8d 95 a0 fc ff ff 	lea    rdx,[rbp-0x360]
+     6cc:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     6d3:	48 89 d6             	mov    rsi,rdx
+     6d6:	48 89 c7             	mov    rdi,rax
+     6d9:	e8 00 00 00 00       	call   6de <_ZN7numbers4evalEPPcRKNS_7complexE+0x464>
+			6da: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     6de:	48 8d 85 a0 fc ff ff 	lea    rax,[rbp-0x360]
+     6e5:	48 89 c7             	mov    rdi,rax
+     6e8:	e8 00 00 00 00       	call   6ed <_ZN7numbers4evalEPPcRKNS_7complexE+0x473>
+			6e9: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     6ed:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     6f4:	48 89 c7             	mov    rdi,rax
+     6f7:	e8 00 00 00 00       	call   6fc <_ZN7numbers4evalEPPcRKNS_7complexE+0x482>
+			6f8: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     6fc:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     703:	ff 
+     704:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     70b:	ff 
+     70c:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     713:	48 89 85 70 ff ff ff 	mov    QWORD PTR [rbp-0x90],rax
+     71a:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     721:	48 89 85 78 ff ff ff 	mov    QWORD PTR [rbp-0x88],rax
+     728:	f2 0f 10 95 70 ff ff 	movsd  xmm2,QWORD PTR [rbp-0x90]
+     72f:	ff 
+     730:	f2 0f 10 9d 78 ff ff 	movsd  xmm3,QWORD PTR [rbp-0x88]
+     737:	ff 
+     738:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     73f:	ff 
+     740:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     747:	ff 
+     748:	e8 00 00 00 00       	call   74d <_ZN7numbers4evalEPPcRKNS_7complexE+0x4d3>
+			749: R_X86_64_PC32	_ZN7numbersmlENS_7complexES0_-0x4
+     74d:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     754:	ff 
+     755:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     75c:	ff 
+     75d:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     764:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     76b:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     772:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     779:	48 8d 85 c0 fc ff ff 	lea    rax,[rbp-0x340]
+     780:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     787:	48 89 d6             	mov    rsi,rdx
+     78a:	48 89 c7             	mov    rdi,rax
+     78d:	e8 00 00 00 00       	call   792 <_ZN7numbers4evalEPPcRKNS_7complexE+0x518>
+			78e: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     792:	48 8d 95 c0 fc ff ff 	lea    rdx,[rbp-0x340]
+     799:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     7a0:	48 89 d6             	mov    rsi,rdx
+     7a3:	48 89 c7             	mov    rdi,rax
+     7a6:	e8 00 00 00 00       	call   7ab <_ZN7numbers4evalEPPcRKNS_7complexE+0x531>
+			7a7: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     7ab:	48 8d 85 c0 fc ff ff 	lea    rax,[rbp-0x340]
+     7b2:	48 89 c7             	mov    rdi,rax
+     7b5:	e8 00 00 00 00       	call   7ba <_ZN7numbers4evalEPPcRKNS_7complexE+0x540>
+			7b6: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     7ba:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     7c1:	48 8d 85 e0 fc ff ff 	lea    rax,[rbp-0x320]
+     7c8:	48 89 d6             	mov    rsi,rdx
+     7cb:	48 89 c7             	mov    rdi,rax
+     7ce:	e8 00 00 00 00       	call   7d3 <_ZN7numbers4evalEPPcRKNS_7complexE+0x559>
+			7cf: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     7d3:	48 8d 85 00 fd ff ff 	lea    rax,[rbp-0x300]
+     7da:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     7e1:	ff 
+     7e2:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     7e9:	ff 
+     7ea:	48 8d 95 e0 fc ff ff 	lea    rdx,[rbp-0x320]
+     7f1:	48 89 d6             	mov    rsi,rdx
+     7f4:	48 89 c7             	mov    rdi,rax
+     7f7:	e8 00 00 00 00       	call   7fc <_ZN7numbers4evalEPPcRKNS_7complexE+0x582>
+			7f8: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     7fc:	48 8d 95 00 fd ff ff 	lea    rdx,[rbp-0x300]
+     803:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     80a:	48 89 d6             	mov    rsi,rdx
+     80d:	48 89 c7             	mov    rdi,rax
+     810:	e8 00 00 00 00       	call   815 <_ZN7numbers4evalEPPcRKNS_7complexE+0x59b>
+			811: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     815:	48 8d 85 00 fd ff ff 	lea    rax,[rbp-0x300]
+     81c:	48 89 c7             	mov    rdi,rax
+     81f:	e8 00 00 00 00       	call   824 <_ZN7numbers4evalEPPcRKNS_7complexE+0x5aa>
+			820: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     824:	48 8d 85 e0 fc ff ff 	lea    rax,[rbp-0x320]
+     82b:	48 89 c7             	mov    rdi,rax
+     82e:	e8 00 00 00 00       	call   833 <_ZN7numbers4evalEPPcRKNS_7complexE+0x5b9>
+			82f: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     833:	e9 6b 06 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     838:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     83c:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     83f:	3c 2f                	cmp    al,0x2f
+     841:	0f 85 bb 01 00 00    	jne    a02 <_ZN7numbers4evalEPPcRKNS_7complexE+0x788>
+     847:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     84e:	48 89 c7             	mov    rdi,rax
+     851:	e8 00 00 00 00       	call   856 <_ZN7numbers4evalEPPcRKNS_7complexE+0x5dc>
+			852: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     856:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     85d:	ff 
+     85e:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     865:	ff 
+     866:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     86d:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     874:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     87b:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     882:	48 8d 85 20 fd ff ff 	lea    rax,[rbp-0x2e0]
+     889:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     890:	48 89 d6             	mov    rsi,rdx
+     893:	48 89 c7             	mov    rdi,rax
+     896:	e8 00 00 00 00       	call   89b <_ZN7numbers4evalEPPcRKNS_7complexE+0x621>
+			897: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     89b:	48 8d 95 20 fd ff ff 	lea    rdx,[rbp-0x2e0]
+     8a2:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     8a9:	48 89 d6             	mov    rsi,rdx
+     8ac:	48 89 c7             	mov    rdi,rax
+     8af:	e8 00 00 00 00       	call   8b4 <_ZN7numbers4evalEPPcRKNS_7complexE+0x63a>
+			8b0: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     8b4:	48 8d 85 20 fd ff ff 	lea    rax,[rbp-0x2e0]
+     8bb:	48 89 c7             	mov    rdi,rax
+     8be:	e8 00 00 00 00       	call   8c3 <_ZN7numbers4evalEPPcRKNS_7complexE+0x649>
+			8bf: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     8c3:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     8ca:	48 89 c7             	mov    rdi,rax
+     8cd:	e8 00 00 00 00       	call   8d2 <_ZN7numbers4evalEPPcRKNS_7complexE+0x658>
+			8ce: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     8d2:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     8d9:	ff 
+     8da:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     8e1:	ff 
+     8e2:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     8e9:	48 89 45 80          	mov    QWORD PTR [rbp-0x80],rax
+     8ed:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     8f4:	48 89 45 88          	mov    QWORD PTR [rbp-0x78],rax
+     8f8:	f2 0f 10 95 40 ff ff 	movsd  xmm2,QWORD PTR [rbp-0xc0]
+     8ff:	ff 
+     900:	f2 0f 10 9d 48 ff ff 	movsd  xmm3,QWORD PTR [rbp-0xb8]
+     907:	ff 
+     908:	f2 0f 10 45 80       	movsd  xmm0,QWORD PTR [rbp-0x80]
+     90d:	f2 0f 10 4d 88       	movsd  xmm1,QWORD PTR [rbp-0x78]
+     912:	e8 00 00 00 00       	call   917 <_ZN7numbers4evalEPPcRKNS_7complexE+0x69d>
+			913: R_X86_64_PC32	_ZN7numbersdvENS_7complexES0_-0x4
+     917:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     91e:	ff 
+     91f:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     926:	ff 
+     927:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     92e:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     935:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     93c:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     943:	48 8d 85 40 fd ff ff 	lea    rax,[rbp-0x2c0]
+     94a:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     951:	48 89 d6             	mov    rsi,rdx
+     954:	48 89 c7             	mov    rdi,rax
+     957:	e8 00 00 00 00       	call   95c <_ZN7numbers4evalEPPcRKNS_7complexE+0x6e2>
+			958: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     95c:	48 8d 95 40 fd ff ff 	lea    rdx,[rbp-0x2c0]
+     963:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     96a:	48 89 d6             	mov    rsi,rdx
+     96d:	48 89 c7             	mov    rdi,rax
+     970:	e8 00 00 00 00       	call   975 <_ZN7numbers4evalEPPcRKNS_7complexE+0x6fb>
+			971: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     975:	48 8d 85 40 fd ff ff 	lea    rax,[rbp-0x2c0]
+     97c:	48 89 c7             	mov    rdi,rax
+     97f:	e8 00 00 00 00       	call   984 <_ZN7numbers4evalEPPcRKNS_7complexE+0x70a>
+			980: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     984:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     98b:	48 8d 85 60 fd ff ff 	lea    rax,[rbp-0x2a0]
+     992:	48 89 d6             	mov    rsi,rdx
+     995:	48 89 c7             	mov    rdi,rax
+     998:	e8 00 00 00 00       	call   99d <_ZN7numbers4evalEPPcRKNS_7complexE+0x723>
+			999: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     99d:	48 8d 85 80 fd ff ff 	lea    rax,[rbp-0x280]
+     9a4:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     9ab:	ff 
+     9ac:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     9b3:	ff 
+     9b4:	48 8d 95 60 fd ff ff 	lea    rdx,[rbp-0x2a0]
+     9bb:	48 89 d6             	mov    rsi,rdx
+     9be:	48 89 c7             	mov    rdi,rax
+     9c1:	e8 00 00 00 00       	call   9c6 <_ZN7numbers4evalEPPcRKNS_7complexE+0x74c>
+			9c2: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     9c6:	48 8d 95 80 fd ff ff 	lea    rdx,[rbp-0x280]
+     9cd:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     9d4:	48 89 d6             	mov    rsi,rdx
+     9d7:	48 89 c7             	mov    rdi,rax
+     9da:	e8 00 00 00 00       	call   9df <_ZN7numbers4evalEPPcRKNS_7complexE+0x765>
+			9db: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     9df:	48 8d 85 80 fd ff ff 	lea    rax,[rbp-0x280]
+     9e6:	48 89 c7             	mov    rdi,rax
+     9e9:	e8 00 00 00 00       	call   9ee <_ZN7numbers4evalEPPcRKNS_7complexE+0x774>
+			9ea: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     9ee:	48 8d 85 60 fd ff ff 	lea    rax,[rbp-0x2a0]
+     9f5:	48 89 c7             	mov    rdi,rax
+     9f8:	e8 00 00 00 00       	call   9fd <_ZN7numbers4evalEPPcRKNS_7complexE+0x783>
+			9f9: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     9fd:	e9 a1 04 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     a02:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     a06:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     a09:	3c 28                	cmp    al,0x28
+     a0b:	0f 85 8b 00 00 00    	jne    a9c <_ZN7numbers4evalEPPcRKNS_7complexE+0x822>
+     a11:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+     a15:	48 8d 45 90          	lea    rax,[rbp-0x70]
+     a19:	48 89 d6             	mov    rsi,rdx
+     a1c:	48 89 c7             	mov    rdi,rax
+     a1f:	e8 00 00 00 00       	call   a24 <_ZN7numbers4evalEPPcRKNS_7complexE+0x7aa>
+			a20: R_X86_64_PC32	_ZN7numbers7complexC1EPKc-0x4
+     a24:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     a2b:	48 8d 85 a0 fd ff ff 	lea    rax,[rbp-0x260]
+     a32:	48 89 d6             	mov    rsi,rdx
+     a35:	48 89 c7             	mov    rdi,rax
+     a38:	e8 00 00 00 00       	call   a3d <_ZN7numbers4evalEPPcRKNS_7complexE+0x7c3>
+			a39: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     a3d:	48 8d 85 c0 fd ff ff 	lea    rax,[rbp-0x240]
+     a44:	f2 0f 10 45 90       	movsd  xmm0,QWORD PTR [rbp-0x70]
+     a49:	f2 0f 10 4d 98       	movsd  xmm1,QWORD PTR [rbp-0x68]
+     a4e:	48 8d 95 a0 fd ff ff 	lea    rdx,[rbp-0x260]
+     a55:	48 89 d6             	mov    rsi,rdx
+     a58:	48 89 c7             	mov    rdi,rax
+     a5b:	e8 00 00 00 00       	call   a60 <_ZN7numbers4evalEPPcRKNS_7complexE+0x7e6>
+			a5c: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     a60:	48 8d 95 c0 fd ff ff 	lea    rdx,[rbp-0x240]
+     a67:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     a6e:	48 89 d6             	mov    rsi,rdx
+     a71:	48 89 c7             	mov    rdi,rax
+     a74:	e8 00 00 00 00       	call   a79 <_ZN7numbers4evalEPPcRKNS_7complexE+0x7ff>
+			a75: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     a79:	48 8d 85 c0 fd ff ff 	lea    rax,[rbp-0x240]
+     a80:	48 89 c7             	mov    rdi,rax
+     a83:	e8 00 00 00 00       	call   a88 <_ZN7numbers4evalEPPcRKNS_7complexE+0x80e>
+			a84: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     a88:	48 8d 85 a0 fd ff ff 	lea    rax,[rbp-0x260]
+     a8f:	48 89 c7             	mov    rdi,rax
+     a92:	e8 00 00 00 00       	call   a97 <_ZN7numbers4evalEPPcRKNS_7complexE+0x81d>
+			a93: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     a97:	e9 07 04 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     a9c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     aa0:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     aa3:	3c 7a                	cmp    al,0x7a
+     aa5:	75 7e                	jne    b25 <_ZN7numbers4evalEPPcRKNS_7complexE+0x8ab>
+     aa7:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     aae:	48 8d 85 e0 fd ff ff 	lea    rax,[rbp-0x220]
+     ab5:	48 89 d6             	mov    rsi,rdx
+     ab8:	48 89 c7             	mov    rdi,rax
+     abb:	e8 00 00 00 00       	call   ac0 <_ZN7numbers4evalEPPcRKNS_7complexE+0x846>
+			abc: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     ac0:	48 8d 95 00 fe ff ff 	lea    rdx,[rbp-0x200]
+     ac7:	48 8b 85 70 fb ff ff 	mov    rax,QWORD PTR [rbp-0x490]
+     ace:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+     ad2:	f2 0f 10 48 08       	movsd  xmm1,QWORD PTR [rax+0x8]
+     ad7:	48 8d 85 e0 fd ff ff 	lea    rax,[rbp-0x220]
+     ade:	48 89 c6             	mov    rsi,rax
+     ae1:	48 89 d7             	mov    rdi,rdx
+     ae4:	e8 00 00 00 00       	call   ae9 <_ZN7numbers4evalEPPcRKNS_7complexE+0x86f>
+			ae5: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     ae9:	48 8d 95 00 fe ff ff 	lea    rdx,[rbp-0x200]
+     af0:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     af7:	48 89 d6             	mov    rsi,rdx
+     afa:	48 89 c7             	mov    rdi,rax
+     afd:	e8 00 00 00 00       	call   b02 <_ZN7numbers4evalEPPcRKNS_7complexE+0x888>
+			afe: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     b02:	48 8d 85 00 fe ff ff 	lea    rax,[rbp-0x200]
+     b09:	48 89 c7             	mov    rdi,rax
+     b0c:	e8 00 00 00 00       	call   b11 <_ZN7numbers4evalEPPcRKNS_7complexE+0x897>
+			b0d: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     b11:	48 8d 85 e0 fd ff ff 	lea    rax,[rbp-0x220]
+     b18:	48 89 c7             	mov    rdi,rax
+     b1b:	e8 00 00 00 00       	call   b20 <_ZN7numbers4evalEPPcRKNS_7complexE+0x8a6>
+			b1c: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     b20:	e9 7e 03 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     b25:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     b29:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     b2c:	3c 21                	cmp    al,0x21
+     b2e:	0f 85 ad 00 00 00    	jne    be1 <_ZN7numbers4evalEPPcRKNS_7complexE+0x967>
+     b34:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     b3b:	48 89 c7             	mov    rdi,rax
+     b3e:	e8 00 00 00 00       	call   b43 <_ZN7numbers4evalEPPcRKNS_7complexE+0x8c9>
+			b3f: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     b43:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     b4a:	ff 
+     b4b:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     b52:	ff 
+     b53:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     b5a:	48 89 45 a0          	mov    QWORD PTR [rbp-0x60],rax
+     b5e:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     b65:	48 89 45 a8          	mov    QWORD PTR [rbp-0x58],rax
+     b69:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     b70:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+     b77:	48 89 d6             	mov    rsi,rdx
+     b7a:	48 89 c7             	mov    rdi,rax
+     b7d:	e8 00 00 00 00       	call   b82 <_ZN7numbers4evalEPPcRKNS_7complexE+0x908>
+			b7e: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     b82:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+     b89:	f2 0f 10 45 a0       	movsd  xmm0,QWORD PTR [rbp-0x60]
+     b8e:	f2 0f 10 4d a8       	movsd  xmm1,QWORD PTR [rbp-0x58]
+     b93:	48 8d 95 20 fe ff ff 	lea    rdx,[rbp-0x1e0]
+     b9a:	48 89 d6             	mov    rsi,rdx
+     b9d:	48 89 c7             	mov    rdi,rax
+     ba0:	e8 00 00 00 00       	call   ba5 <_ZN7numbers4evalEPPcRKNS_7complexE+0x92b>
+			ba1: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     ba5:	48 8d 95 40 fe ff ff 	lea    rdx,[rbp-0x1c0]
+     bac:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     bb3:	48 89 d6             	mov    rsi,rdx
+     bb6:	48 89 c7             	mov    rdi,rax
+     bb9:	e8 00 00 00 00       	call   bbe <_ZN7numbers4evalEPPcRKNS_7complexE+0x944>
+			bba: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     bbe:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+     bc5:	48 89 c7             	mov    rdi,rax
+     bc8:	e8 00 00 00 00       	call   bcd <_ZN7numbers4evalEPPcRKNS_7complexE+0x953>
+			bc9: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     bcd:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+     bd4:	48 89 c7             	mov    rdi,rax
+     bd7:	e8 00 00 00 00       	call   bdc <_ZN7numbers4evalEPPcRKNS_7complexE+0x962>
+			bd8: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     bdc:	e9 c2 02 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     be1:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     be5:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     be8:	3c 3b                	cmp    al,0x3b
+     bea:	75 46                	jne    c32 <_ZN7numbers4evalEPPcRKNS_7complexE+0x9b8>
+     bec:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+     bf3:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     bfa:	48 89 d6             	mov    rsi,rdx
+     bfd:	48 89 c7             	mov    rdi,rax
+     c00:	e8 00 00 00 00       	call   c05 <_ZN7numbers4evalEPPcRKNS_7complexE+0x98b>
+			c01: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     c05:	48 8d 95 60 fe ff ff 	lea    rdx,[rbp-0x1a0]
+     c0c:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     c13:	48 89 d6             	mov    rsi,rdx
+     c16:	48 89 c7             	mov    rdi,rax
+     c19:	e8 00 00 00 00       	call   c1e <_ZN7numbers4evalEPPcRKNS_7complexE+0x9a4>
+			c1a: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     c1e:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+     c25:	48 89 c7             	mov    rdi,rax
+     c28:	e8 00 00 00 00       	call   c2d <_ZN7numbers4evalEPPcRKNS_7complexE+0x9b3>
+			c29: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     c2d:	e9 71 02 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     c32:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     c36:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     c39:	3c 7e                	cmp    al,0x7e
+     c3b:	0f 85 2c 01 00 00    	jne    d6d <_ZN7numbers4evalEPPcRKNS_7complexE+0xaf3>
+     c41:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     c48:	48 89 c7             	mov    rdi,rax
+     c4b:	e8 00 00 00 00       	call   c50 <_ZN7numbers4evalEPPcRKNS_7complexE+0x9d6>
+			c4c: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     c50:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     c57:	ff 
+     c58:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     c5f:	ff 
+     c60:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     c67:	48 89 45 b0          	mov    QWORD PTR [rbp-0x50],rax
+     c6b:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     c72:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+     c76:	48 8d 45 b0          	lea    rax,[rbp-0x50]
+     c7a:	48 89 c7             	mov    rdi,rax
+     c7d:	e8 00 00 00 00       	call   c82 <_ZN7numbers4evalEPPcRKNS_7complexE+0xa08>
+			c7e: R_X86_64_PC32	_ZNK7numbers7complexcoEv-0x4
+     c82:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     c89:	ff 
+     c8a:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     c91:	ff 
+     c92:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     c99:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     ca0:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     ca7:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     cae:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+     cb5:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     cbc:	48 89 d6             	mov    rsi,rdx
+     cbf:	48 89 c7             	mov    rdi,rax
+     cc2:	e8 00 00 00 00       	call   cc7 <_ZN7numbers4evalEPPcRKNS_7complexE+0xa4d>
+			cc3: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     cc7:	48 8d 95 80 fe ff ff 	lea    rdx,[rbp-0x180]
+     cce:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     cd5:	48 89 d6             	mov    rsi,rdx
+     cd8:	48 89 c7             	mov    rdi,rax
+     cdb:	e8 00 00 00 00       	call   ce0 <_ZN7numbers4evalEPPcRKNS_7complexE+0xa66>
+			cdc: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     ce0:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+     ce7:	48 89 c7             	mov    rdi,rax
+     cea:	e8 00 00 00 00       	call   cef <_ZN7numbers4evalEPPcRKNS_7complexE+0xa75>
+			ceb: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     cef:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     cf6:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+     cfd:	48 89 d6             	mov    rsi,rdx
+     d00:	48 89 c7             	mov    rdi,rax
+     d03:	e8 00 00 00 00       	call   d08 <_ZN7numbers4evalEPPcRKNS_7complexE+0xa8e>
+			d04: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     d08:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+     d0f:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     d16:	ff 
+     d17:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     d1e:	ff 
+     d1f:	48 8d 95 a0 fe ff ff 	lea    rdx,[rbp-0x160]
+     d26:	48 89 d6             	mov    rsi,rdx
+     d29:	48 89 c7             	mov    rdi,rax
+     d2c:	e8 00 00 00 00       	call   d31 <_ZN7numbers4evalEPPcRKNS_7complexE+0xab7>
+			d2d: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     d31:	48 8d 95 c0 fe ff ff 	lea    rdx,[rbp-0x140]
+     d38:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     d3f:	48 89 d6             	mov    rsi,rdx
+     d42:	48 89 c7             	mov    rdi,rax
+     d45:	e8 00 00 00 00       	call   d4a <_ZN7numbers4evalEPPcRKNS_7complexE+0xad0>
+			d46: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     d4a:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+     d51:	48 89 c7             	mov    rdi,rax
+     d54:	e8 00 00 00 00       	call   d59 <_ZN7numbers4evalEPPcRKNS_7complexE+0xadf>
+			d55: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     d59:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+     d60:	48 89 c7             	mov    rdi,rax
+     d63:	e8 00 00 00 00       	call   d68 <_ZN7numbers4evalEPPcRKNS_7complexE+0xaee>
+			d64: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     d68:	e9 36 01 00 00       	jmp    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     d6d:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+     d71:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+     d74:	3c 23                	cmp    al,0x23
+     d76:	0f 85 27 01 00 00    	jne    ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+     d7c:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     d83:	48 89 c7             	mov    rdi,rax
+     d86:	e8 00 00 00 00       	call   d8b <_ZN7numbers4evalEPPcRKNS_7complexE+0xb11>
+			d87: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     d8b:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     d92:	ff 
+     d93:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     d9a:	ff 
+     d9b:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     da2:	48 89 45 c0          	mov    QWORD PTR [rbp-0x40],rax
+     da6:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     dad:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+     db1:	48 8d 45 c0          	lea    rax,[rbp-0x40]
+     db5:	48 89 c7             	mov    rdi,rax
+     db8:	e8 00 00 00 00       	call   dbd <_ZN7numbers4evalEPPcRKNS_7complexE+0xb43>
+			db9: R_X86_64_PC32	_ZNK7numbers7complexngEv-0x4
+     dbd:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     dc4:	ff 
+     dc5:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     dcc:	ff 
+     dcd:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     dd4:	48 89 85 40 ff ff ff 	mov    QWORD PTR [rbp-0xc0],rax
+     ddb:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     de2:	48 89 85 48 ff ff ff 	mov    QWORD PTR [rbp-0xb8],rax
+     de9:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+     df0:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     df7:	48 89 d6             	mov    rsi,rdx
+     dfa:	48 89 c7             	mov    rdi,rax
+     dfd:	e8 00 00 00 00       	call   e02 <_ZN7numbers4evalEPPcRKNS_7complexE+0xb88>
+			dfe: R_X86_64_PC32	_ZNK7numbers13complex_stackcoEv-0x4
+     e02:	48 8d 95 e0 fe ff ff 	lea    rdx,[rbp-0x120]
+     e09:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     e10:	48 89 d6             	mov    rsi,rdx
+     e13:	48 89 c7             	mov    rdi,rax
+     e16:	e8 00 00 00 00       	call   e1b <_ZN7numbers4evalEPPcRKNS_7complexE+0xba1>
+			e17: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     e1b:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+     e22:	48 89 c7             	mov    rdi,rax
+     e25:	e8 00 00 00 00       	call   e2a <_ZN7numbers4evalEPPcRKNS_7complexE+0xbb0>
+			e26: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     e2a:	48 8d 95 80 fb ff ff 	lea    rdx,[rbp-0x480]
+     e31:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+     e38:	48 89 d6             	mov    rsi,rdx
+     e3b:	48 89 c7             	mov    rdi,rax
+     e3e:	e8 00 00 00 00       	call   e43 <_ZN7numbers4evalEPPcRKNS_7complexE+0xbc9>
+			e3f: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+     e43:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+     e4a:	f2 0f 10 85 40 ff ff 	movsd  xmm0,QWORD PTR [rbp-0xc0]
+     e51:	ff 
+     e52:	f2 0f 10 8d 48 ff ff 	movsd  xmm1,QWORD PTR [rbp-0xb8]
+     e59:	ff 
+     e5a:	48 8d 95 00 ff ff ff 	lea    rdx,[rbp-0x100]
+     e61:	48 89 d6             	mov    rsi,rdx
+     e64:	48 89 c7             	mov    rdi,rax
+     e67:	e8 00 00 00 00       	call   e6c <_ZN7numbers4evalEPPcRKNS_7complexE+0xbf2>
+			e68: R_X86_64_PC32	_ZN7numberslsENS_13complex_stackENS_7complexE-0x4
+     e6c:	48 8d 95 20 ff ff ff 	lea    rdx,[rbp-0xe0]
+     e73:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     e7a:	48 89 d6             	mov    rsi,rdx
+     e7d:	48 89 c7             	mov    rdi,rax
+     e80:	e8 00 00 00 00       	call   e85 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc0b>
+			e81: R_X86_64_PC32	_ZN7numbers13complex_stackaSERKS0_-0x4
+     e85:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+     e8c:	48 89 c7             	mov    rdi,rax
+     e8f:	e8 00 00 00 00       	call   e94 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc1a>
+			e90: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     e94:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+     e9b:	48 89 c7             	mov    rdi,rax
+     e9e:	e8 00 00 00 00       	call   ea3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc29>
+			e9f: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     ea3:	48 83 85 78 fb ff ff 	add    QWORD PTR [rbp-0x488],0x8
+     eaa:	08 
+     eab:	48 8b 85 78 fb ff ff 	mov    rax,QWORD PTR [rbp-0x488]
+     eb2:	48 8b 00             	mov    rax,QWORD PTR [rax]
+     eb5:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+     eb9:	48 83 7d e8 00       	cmp    QWORD PTR [rbp-0x18],0x0
+     ebe:	0f 95 c0             	setne  al
+     ec1:	84 c0                	test   al,al
+     ec3:	0f 85 ed f3 ff ff    	jne    2b6 <_ZN7numbers4evalEPPcRKNS_7complexE+0x3c>
+     ec9:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     ed0:	48 89 c7             	mov    rdi,rax
+     ed3:	e8 00 00 00 00       	call   ed8 <_ZN7numbers4evalEPPcRKNS_7complexE+0xc5e>
+			ed4: R_X86_64_PC32	_ZNK7numbers13complex_stackpsEv-0x4
+     ed8:	f2 0f 11 85 60 fb ff 	movsd  QWORD PTR [rbp-0x4a0],xmm0
+     edf:	ff 
+     ee0:	f2 0f 11 8d 68 fb ff 	movsd  QWORD PTR [rbp-0x498],xmm1
+     ee7:	ff 
+     ee8:	48 8b 85 60 fb ff ff 	mov    rax,QWORD PTR [rbp-0x4a0]
+     eef:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+     ef3:	48 8b 85 68 fb ff ff 	mov    rax,QWORD PTR [rbp-0x498]
+     efa:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+     efe:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+     f05:	48 89 c7             	mov    rdi,rax
+     f08:	e8 00 00 00 00       	call   f0d <_ZN7numbers4evalEPPcRKNS_7complexE+0xc93>
+			f09: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     f0d:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+     f11:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+     f15:	48 89 95 58 fb ff ff 	mov    QWORD PTR [rbp-0x4a8],rdx
+     f1c:	f2 0f 10 85 58 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x4a8]
+     f23:	ff 
+     f24:	48 89 85 58 fb ff ff 	mov    QWORD PTR [rbp-0x4a8],rax
+     f2b:	f2 0f 10 8d 58 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x4a8]
+     f32:	ff 
+     f33:	48 81 c4 a8 04 00 00 	add    rsp,0x4a8
+     f3a:	5b                   	pop    rbx
+     f3b:	5d                   	pop    rbp
+     f3c:	c3                   	ret    
+     f3d:	48 89 c3             	mov    rbx,rax
+     f40:	48 8d 85 a0 fb ff ff 	lea    rax,[rbp-0x460]
+     f47:	48 89 c7             	mov    rdi,rax
+     f4a:	e8 00 00 00 00       	call   f4f <_ZN7numbers4evalEPPcRKNS_7complexE+0xcd5>
+			f4b: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     f4f:	e9 5d 02 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     f54:	48 89 c3             	mov    rbx,rax
+     f57:	48 8d 85 c0 fb ff ff 	lea    rax,[rbp-0x440]
+     f5e:	48 89 c7             	mov    rdi,rax
+     f61:	e8 00 00 00 00       	call   f66 <_ZN7numbers4evalEPPcRKNS_7complexE+0xcec>
+			f62: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     f66:	e9 46 02 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     f6b:	48 89 c3             	mov    rbx,rax
+     f6e:	48 8d 85 00 fc ff ff 	lea    rax,[rbp-0x400]
+     f75:	48 89 c7             	mov    rdi,rax
+     f78:	e8 00 00 00 00       	call   f7d <_ZN7numbers4evalEPPcRKNS_7complexE+0xd03>
+			f79: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     f7d:	eb 03                	jmp    f82 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd08>
+     f7f:	48 89 c3             	mov    rbx,rax
+     f82:	48 8d 85 e0 fb ff ff 	lea    rax,[rbp-0x420]
+     f89:	48 89 c7             	mov    rdi,rax
+     f8c:	e8 00 00 00 00       	call   f91 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd17>
+			f8d: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     f91:	e9 1b 02 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     f96:	48 89 c3             	mov    rbx,rax
+     f99:	48 8d 85 20 fc ff ff 	lea    rax,[rbp-0x3e0]
+     fa0:	48 89 c7             	mov    rdi,rax
+     fa3:	e8 00 00 00 00       	call   fa8 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd2e>
+			fa4: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     fa8:	e9 04 02 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     fad:	48 89 c3             	mov    rbx,rax
+     fb0:	48 8d 85 40 fc ff ff 	lea    rax,[rbp-0x3c0]
+     fb7:	48 89 c7             	mov    rdi,rax
+     fba:	e8 00 00 00 00       	call   fbf <_ZN7numbers4evalEPPcRKNS_7complexE+0xd45>
+			fbb: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     fbf:	e9 ed 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     fc4:	48 89 c3             	mov    rbx,rax
+     fc7:	48 8d 85 80 fc ff ff 	lea    rax,[rbp-0x380]
+     fce:	48 89 c7             	mov    rdi,rax
+     fd1:	e8 00 00 00 00       	call   fd6 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd5c>
+			fd2: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     fd6:	eb 03                	jmp    fdb <_ZN7numbers4evalEPPcRKNS_7complexE+0xd61>
+     fd8:	48 89 c3             	mov    rbx,rax
+     fdb:	48 8d 85 60 fc ff ff 	lea    rax,[rbp-0x3a0]
+     fe2:	48 89 c7             	mov    rdi,rax
+     fe5:	e8 00 00 00 00       	call   fea <_ZN7numbers4evalEPPcRKNS_7complexE+0xd70>
+			fe6: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+     fea:	e9 c2 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+     fef:	48 89 c3             	mov    rbx,rax
+     ff2:	48 8d 85 a0 fc ff ff 	lea    rax,[rbp-0x360]
+     ff9:	48 89 c7             	mov    rdi,rax
+     ffc:	e8 00 00 00 00       	call   1001 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd87>
+			ffd: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1001:	e9 ab 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1006:	48 89 c3             	mov    rbx,rax
+    1009:	48 8d 85 c0 fc ff ff 	lea    rax,[rbp-0x340]
+    1010:	48 89 c7             	mov    rdi,rax
+    1013:	e8 00 00 00 00       	call   1018 <_ZN7numbers4evalEPPcRKNS_7complexE+0xd9e>
+			1014: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1018:	e9 94 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    101d:	48 89 c3             	mov    rbx,rax
+    1020:	48 8d 85 00 fd ff ff 	lea    rax,[rbp-0x300]
+    1027:	48 89 c7             	mov    rdi,rax
+    102a:	e8 00 00 00 00       	call   102f <_ZN7numbers4evalEPPcRKNS_7complexE+0xdb5>
+			102b: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    102f:	eb 03                	jmp    1034 <_ZN7numbers4evalEPPcRKNS_7complexE+0xdba>
+    1031:	48 89 c3             	mov    rbx,rax
+    1034:	48 8d 85 e0 fc ff ff 	lea    rax,[rbp-0x320]
+    103b:	48 89 c7             	mov    rdi,rax
+    103e:	e8 00 00 00 00       	call   1043 <_ZN7numbers4evalEPPcRKNS_7complexE+0xdc9>
+			103f: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1043:	e9 69 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1048:	48 89 c3             	mov    rbx,rax
+    104b:	48 8d 85 20 fd ff ff 	lea    rax,[rbp-0x2e0]
+    1052:	48 89 c7             	mov    rdi,rax
+    1055:	e8 00 00 00 00       	call   105a <_ZN7numbers4evalEPPcRKNS_7complexE+0xde0>
+			1056: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    105a:	e9 52 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    105f:	48 89 c3             	mov    rbx,rax
+    1062:	48 8d 85 40 fd ff ff 	lea    rax,[rbp-0x2c0]
+    1069:	48 89 c7             	mov    rdi,rax
+    106c:	e8 00 00 00 00       	call   1071 <_ZN7numbers4evalEPPcRKNS_7complexE+0xdf7>
+			106d: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1071:	e9 3b 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1076:	48 89 c3             	mov    rbx,rax
+    1079:	48 8d 85 80 fd ff ff 	lea    rax,[rbp-0x280]
+    1080:	48 89 c7             	mov    rdi,rax
+    1083:	e8 00 00 00 00       	call   1088 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe0e>
+			1084: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1088:	eb 03                	jmp    108d <_ZN7numbers4evalEPPcRKNS_7complexE+0xe13>
+    108a:	48 89 c3             	mov    rbx,rax
+    108d:	48 8d 85 60 fd ff ff 	lea    rax,[rbp-0x2a0]
+    1094:	48 89 c7             	mov    rdi,rax
+    1097:	e8 00 00 00 00       	call   109c <_ZN7numbers4evalEPPcRKNS_7complexE+0xe22>
+			1098: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    109c:	e9 10 01 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    10a1:	48 89 c3             	mov    rbx,rax
+    10a4:	48 8d 85 c0 fd ff ff 	lea    rax,[rbp-0x240]
+    10ab:	48 89 c7             	mov    rdi,rax
+    10ae:	e8 00 00 00 00       	call   10b3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe39>
+			10af: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    10b3:	eb 03                	jmp    10b8 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe3e>
+    10b5:	48 89 c3             	mov    rbx,rax
+    10b8:	48 8d 85 a0 fd ff ff 	lea    rax,[rbp-0x260]
+    10bf:	48 89 c7             	mov    rdi,rax
+    10c2:	e8 00 00 00 00       	call   10c7 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe4d>
+			10c3: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    10c7:	e9 e5 00 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    10cc:	48 89 c3             	mov    rbx,rax
+    10cf:	48 8d 85 00 fe ff ff 	lea    rax,[rbp-0x200]
+    10d6:	48 89 c7             	mov    rdi,rax
+    10d9:	e8 00 00 00 00       	call   10de <_ZN7numbers4evalEPPcRKNS_7complexE+0xe64>
+			10da: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    10de:	eb 03                	jmp    10e3 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe69>
+    10e0:	48 89 c3             	mov    rbx,rax
+    10e3:	48 8d 85 e0 fd ff ff 	lea    rax,[rbp-0x220]
+    10ea:	48 89 c7             	mov    rdi,rax
+    10ed:	e8 00 00 00 00       	call   10f2 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe78>
+			10ee: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    10f2:	e9 ba 00 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    10f7:	48 89 c3             	mov    rbx,rax
+    10fa:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+    1101:	48 89 c7             	mov    rdi,rax
+    1104:	e8 00 00 00 00       	call   1109 <_ZN7numbers4evalEPPcRKNS_7complexE+0xe8f>
+			1105: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1109:	eb 03                	jmp    110e <_ZN7numbers4evalEPPcRKNS_7complexE+0xe94>
+    110b:	48 89 c3             	mov    rbx,rax
+    110e:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+    1115:	48 89 c7             	mov    rdi,rax
+    1118:	e8 00 00 00 00       	call   111d <_ZN7numbers4evalEPPcRKNS_7complexE+0xea3>
+			1119: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    111d:	e9 8f 00 00 00       	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1122:	48 89 c3             	mov    rbx,rax
+    1125:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+    112c:	48 89 c7             	mov    rdi,rax
+    112f:	e8 00 00 00 00       	call   1134 <_ZN7numbers4evalEPPcRKNS_7complexE+0xeba>
+			1130: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1134:	eb 7b                	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1136:	48 89 c3             	mov    rbx,rax
+    1139:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+    1140:	48 89 c7             	mov    rdi,rax
+    1143:	e8 00 00 00 00       	call   1148 <_ZN7numbers4evalEPPcRKNS_7complexE+0xece>
+			1144: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1148:	eb 67                	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    114a:	48 89 c3             	mov    rbx,rax
+    114d:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+    1154:	48 89 c7             	mov    rdi,rax
+    1157:	e8 00 00 00 00       	call   115c <_ZN7numbers4evalEPPcRKNS_7complexE+0xee2>
+			1158: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    115c:	eb 03                	jmp    1161 <_ZN7numbers4evalEPPcRKNS_7complexE+0xee7>
+    115e:	48 89 c3             	mov    rbx,rax
+    1161:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+    1168:	48 89 c7             	mov    rdi,rax
+    116b:	e8 00 00 00 00       	call   1170 <_ZN7numbers4evalEPPcRKNS_7complexE+0xef6>
+			116c: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1170:	eb 3f                	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1172:	48 89 c3             	mov    rbx,rax
+    1175:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+    117c:	48 89 c7             	mov    rdi,rax
+    117f:	e8 00 00 00 00       	call   1184 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf0a>
+			1180: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1184:	eb 2b                	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    1186:	48 89 c3             	mov    rbx,rax
+    1189:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+    1190:	48 89 c7             	mov    rdi,rax
+    1193:	e8 00 00 00 00       	call   1198 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf1e>
+			1194: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    1198:	eb 03                	jmp    119d <_ZN7numbers4evalEPPcRKNS_7complexE+0xf23>
+    119a:	48 89 c3             	mov    rbx,rax
+    119d:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+    11a4:	48 89 c7             	mov    rdi,rax
+    11a7:	e8 00 00 00 00       	call   11ac <_ZN7numbers4evalEPPcRKNS_7complexE+0xf32>
+			11a8: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    11ac:	eb 03                	jmp    11b1 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf37>
+    11ae:	48 89 c3             	mov    rbx,rax
+    11b1:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+    11b8:	48 89 c7             	mov    rdi,rax
+    11bb:	e8 00 00 00 00       	call   11c0 <_ZN7numbers4evalEPPcRKNS_7complexE+0xf46>
+			11bc: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+    11c0:	48 89 d8             	mov    rax,rbx
+    11c3:	48 89 c7             	mov    rdi,rax
+    11c6:	e8 00 00 00 00       	call   11cb <main>
+			11c7: R_X86_64_PC32	_Unwind_Resume-0x4
+
+00000000000011cb <main>:
+    11cb:	55                   	push   rbp
+    11cc:	48 89 e5             	mov    rbp,rsp
+    11cf:	48 81 ec 40 05 00 00 	sub    rsp,0x540
+    11d6:	89 bd ec fa ff ff    	mov    DWORD PTR [rbp-0x514],edi
+    11dc:	48 89 b5 e0 fa ff ff 	mov    QWORD PTR [rbp-0x520],rsi
+    11e3:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+    11ea:	00 00 
+    11ec:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+    11f0:	31 c0                	xor    eax,eax
+    11f2:	48 8b 85 e0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x520]
+    11f9:	48 83 c0 08          	add    rax,0x8
+    11fd:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+    1200:	48 8d 85 f0 fa ff ff 	lea    rax,[rbp-0x510]
+    1207:	48 89 d6             	mov    rsi,rdx
+    120a:	48 89 c7             	mov    rdi,rax
+    120d:	e8 00 00 00 00       	call   1212 <main+0x47>
+			120e: R_X86_64_PC32	_ZN7numbers7complexC1EPKc-0x4
+    1212:	48 8b 85 e0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x520]
+    1219:	48 83 c0 10          	add    rax,0x10
+    121d:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1220:	48 8d 95 e0 fb ff ff 	lea    rdx,[rbp-0x420]
+    1227:	be 00 00 00 00       	mov    esi,0x0
+			1228: R_X86_64_32	.rodata+0x18
+    122c:	48 89 c7             	mov    rdi,rax
+    122f:	b8 00 00 00 00       	mov    eax,0x0
+    1234:	e8 00 00 00 00       	call   1239 <main+0x6e>
+			1235: R_X86_64_PC32	sscanf-0x4
+    1239:	48 8b 85 e0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x520]
+    1240:	48 83 c0 18          	add    rax,0x18
+    1244:	48 8b 00             	mov    rax,QWORD PTR [rax]
+    1247:	48 8d 95 e8 fb ff ff 	lea    rdx,[rbp-0x418]
+    124e:	be 00 00 00 00       	mov    esi,0x0
+			124f: R_X86_64_32	.rodata+0x1c
+    1253:	48 89 c7             	mov    rdi,rax
+    1256:	b8 00 00 00 00       	mov    eax,0x0
+    125b:	e8 00 00 00 00       	call   1260 <main+0x95>
+			125c: R_X86_64_PC32	sscanf-0x4
+    1260:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    1266:	89 c2                	mov    edx,eax
+    1268:	c1 ea 1f             	shr    edx,0x1f
+    126b:	01 d0                	add    eax,edx
+    126d:	d1 f8                	sar    eax,1
+    126f:	83 c0 05             	add    eax,0x5
+    1272:	89 85 e8 fb ff ff    	mov    DWORD PTR [rbp-0x418],eax
+    1278:	48 8d 85 00 fb ff ff 	lea    rax,[rbp-0x500]
+    127f:	66 0f 57 c9          	xorpd  xmm1,xmm1
+    1283:	66 0f 57 c0          	xorpd  xmm0,xmm0
+    1287:	48 89 c7             	mov    rdi,rax
+    128a:	e8 00 00 00 00       	call   128f <main+0xc4>
+			128b: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+    128f:	f2 0f 10 85 e0 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x420]
+    1296:	ff 
+    1297:	48 8d 85 20 fb ff ff 	lea    rax,[rbp-0x4e0]
+    129e:	66 0f 28 c8          	movapd xmm1,xmm0
+    12a2:	66 0f 57 c0          	xorpd  xmm0,xmm0
+    12a6:	48 89 c7             	mov    rdi,rax
+    12a9:	e8 00 00 00 00       	call   12ae <main+0xe3>
+			12aa: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+    12ae:	f2 0f 10 95 20 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x4e0]
+    12b5:	ff 
+    12b6:	f2 0f 10 9d 28 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x4d8]
+    12bd:	ff 
+    12be:	f2 0f 10 85 f0 fa ff 	movsd  xmm0,QWORD PTR [rbp-0x510]
+    12c5:	ff 
+    12c6:	f2 0f 10 8d f8 fa ff 	movsd  xmm1,QWORD PTR [rbp-0x508]
+    12cd:	ff 
+    12ce:	e8 00 00 00 00       	call   12d3 <main+0x108>
+			12cf: R_X86_64_PC32	_ZN7numbersplENS_7complexES0_-0x4
+    12d3:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    12da:	ff 
+    12db:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    12e2:	ff 
+    12e3:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    12ea:	48 89 85 10 fb ff ff 	mov    QWORD PTR [rbp-0x4f0],rax
+    12f1:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    12f8:	48 89 85 18 fb ff ff 	mov    QWORD PTR [rbp-0x4e8],rax
+    12ff:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    1305:	f2 0f 2a c0          	cvtsi2sd xmm0,eax
+    1309:	f2 0f 10 0d 00 00 00 	movsd  xmm1,QWORD PTR [rip+0x0]        # 1311 <main+0x146>
+    1310:	00 
+			130d: R_X86_64_PC32	.rodata+0x2c
+    1311:	66 0f 28 d1          	movapd xmm2,xmm1
+    1315:	f2 0f 5e d0          	divsd  xmm2,xmm0
+    1319:	66 0f 28 c2          	movapd xmm0,xmm2
+    131d:	e8 00 00 00 00       	call   1322 <main+0x157>
+			131e: R_X86_64_PC32	sin-0x4
+    1322:	f2 0f 11 85 c8 fa ff 	movsd  QWORD PTR [rbp-0x538],xmm0
+    1329:	ff 
+    132a:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    1330:	f2 0f 2a c0          	cvtsi2sd xmm0,eax
+    1334:	f2 0f 10 0d 00 00 00 	movsd  xmm1,QWORD PTR [rip+0x0]        # 133c <main+0x171>
+    133b:	00 
+			1338: R_X86_64_PC32	.rodata+0x2c
+    133c:	66 0f 28 d1          	movapd xmm2,xmm1
+    1340:	f2 0f 5e d0          	divsd  xmm2,xmm0
+    1344:	66 0f 28 c2          	movapd xmm0,xmm2
+    1348:	e8 00 00 00 00       	call   134d <main+0x182>
+			1349: R_X86_64_PC32	cos-0x4
+    134d:	48 8d 85 30 fb ff ff 	lea    rax,[rbp-0x4d0]
+    1354:	f2 0f 10 8d c8 fa ff 	movsd  xmm1,QWORD PTR [rbp-0x538]
+    135b:	ff 
+    135c:	48 89 c7             	mov    rdi,rax
+    135f:	e8 00 00 00 00       	call   1364 <main+0x199>
+			1360: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+    1364:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    136a:	f2 0f 2a c0          	cvtsi2sd xmm0,eax
+    136e:	f2 0f 10 0d 00 00 00 	movsd  xmm1,QWORD PTR [rip+0x0]        # 1376 <main+0x1ab>
+    1375:	00 
+			1372: R_X86_64_PC32	.rodata+0x34
+    1376:	66 0f 28 d1          	movapd xmm2,xmm1
+    137a:	f2 0f 5e d0          	divsd  xmm2,xmm0
+    137e:	66 0f 28 c2          	movapd xmm0,xmm2
+    1382:	e8 00 00 00 00       	call   1387 <main+0x1bc>
+			1383: R_X86_64_PC32	sin-0x4
+    1387:	f2 0f 11 85 c0 fa ff 	movsd  QWORD PTR [rbp-0x540],xmm0
+    138e:	ff 
+    138f:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    1395:	f2 0f 2a c0          	cvtsi2sd xmm0,eax
+    1399:	f2 0f 10 0d 00 00 00 	movsd  xmm1,QWORD PTR [rip+0x0]        # 13a1 <main+0x1d6>
+    13a0:	00 
+			139d: R_X86_64_PC32	.rodata+0x34
+    13a1:	66 0f 28 d1          	movapd xmm2,xmm1
+    13a5:	f2 0f 5e d0          	divsd  xmm2,xmm0
+    13a9:	66 0f 28 c2          	movapd xmm0,xmm2
+    13ad:	e8 00 00 00 00       	call   13b2 <main+0x1e7>
+			13ae: R_X86_64_PC32	cos-0x4
+    13b2:	48 8d 85 40 fb ff ff 	lea    rax,[rbp-0x4c0]
+    13b9:	f2 0f 10 8d c0 fa ff 	movsd  xmm1,QWORD PTR [rbp-0x540]
+    13c0:	ff 
+    13c1:	48 89 c7             	mov    rdi,rax
+    13c4:	e8 00 00 00 00       	call   13c9 <main+0x1fe>
+			13c5: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+    13c9:	c7 85 ec fb ff ff 00 	mov    DWORD PTR [rbp-0x414],0x0
+    13d0:	00 00 00 
+    13d3:	e9 45 03 00 00       	jmp    171d <main+0x552>
+    13d8:	f2 0f 10 95 f0 fa ff 	movsd  xmm2,QWORD PTR [rbp-0x510]
+    13df:	ff 
+    13e0:	f2 0f 10 9d f8 fa ff 	movsd  xmm3,QWORD PTR [rbp-0x508]
+    13e7:	ff 
+    13e8:	f2 0f 10 85 10 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x4f0]
+    13ef:	ff 
+    13f0:	f2 0f 10 8d 18 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x4e8]
+    13f7:	ff 
+    13f8:	e8 00 00 00 00       	call   13fd <main+0x232>
+			13f9: R_X86_64_PC32	_ZN7numbersmiENS_7complexES0_-0x4
+    13fd:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1404:	ff 
+    1405:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    140c:	ff 
+    140d:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    1414:	48 89 85 60 fb ff ff 	mov    QWORD PTR [rbp-0x4a0],rax
+    141b:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    1422:	48 89 85 68 fb ff ff 	mov    QWORD PTR [rbp-0x498],rax
+    1429:	f2 0f 10 95 30 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x4d0]
+    1430:	ff 
+    1431:	f2 0f 10 9d 38 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x4c8]
+    1438:	ff 
+    1439:	f2 0f 10 85 60 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x4a0]
+    1440:	ff 
+    1441:	f2 0f 10 8d 68 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x498]
+    1448:	ff 
+    1449:	e8 00 00 00 00       	call   144e <main+0x283>
+			144a: R_X86_64_PC32	_ZN7numbersmlENS_7complexES0_-0x4
+    144e:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1455:	ff 
+    1456:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    145d:	ff 
+    145e:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    1465:	48 89 85 70 fb ff ff 	mov    QWORD PTR [rbp-0x490],rax
+    146c:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    1473:	48 89 85 78 fb ff ff 	mov    QWORD PTR [rbp-0x488],rax
+    147a:	f2 0f 10 95 70 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x490]
+    1481:	ff 
+    1482:	f2 0f 10 9d 78 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x488]
+    1489:	ff 
+    148a:	f2 0f 10 85 f0 fa ff 	movsd  xmm0,QWORD PTR [rbp-0x510]
+    1491:	ff 
+    1492:	f2 0f 10 8d f8 fa ff 	movsd  xmm1,QWORD PTR [rbp-0x508]
+    1499:	ff 
+    149a:	e8 00 00 00 00       	call   149f <main+0x2d4>
+			149b: R_X86_64_PC32	_ZN7numbersplENS_7complexES0_-0x4
+    149f:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    14a6:	ff 
+    14a7:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    14ae:	ff 
+    14af:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    14b6:	48 89 85 80 fb ff ff 	mov    QWORD PTR [rbp-0x480],rax
+    14bd:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    14c4:	48 89 85 88 fb ff ff 	mov    QWORD PTR [rbp-0x478],rax
+    14cb:	48 8b 85 e0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x520]
+    14d2:	48 8d 50 20          	lea    rdx,[rax+0x20]
+    14d6:	48 8d 85 80 fb ff ff 	lea    rax,[rbp-0x480]
+    14dd:	48 89 c6             	mov    rsi,rax
+    14e0:	48 89 d7             	mov    rdi,rdx
+    14e3:	e8 00 00 00 00       	call   14e8 <main+0x31d>
+			14e4: R_X86_64_PC32	_ZN7numbers4evalEPPcRKNS_7complexE-0x4
+    14e8:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    14ef:	ff 
+    14f0:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    14f7:	ff 
+    14f8:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    14ff:	48 89 85 50 fb ff ff 	mov    QWORD PTR [rbp-0x4b0],rax
+    1506:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    150d:	48 89 85 58 fb ff ff 	mov    QWORD PTR [rbp-0x4a8],rax
+    1514:	f2 0f 10 95 f0 fa ff 	movsd  xmm2,QWORD PTR [rbp-0x510]
+    151b:	ff 
+    151c:	f2 0f 10 9d f8 fa ff 	movsd  xmm3,QWORD PTR [rbp-0x508]
+    1523:	ff 
+    1524:	f2 0f 10 85 10 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x4f0]
+    152b:	ff 
+    152c:	f2 0f 10 8d 18 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x4e8]
+    1533:	ff 
+    1534:	e8 00 00 00 00       	call   1539 <main+0x36e>
+			1535: R_X86_64_PC32	_ZN7numbersmiENS_7complexES0_-0x4
+    1539:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1540:	ff 
+    1541:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    1548:	ff 
+    1549:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    1550:	48 89 85 a0 fb ff ff 	mov    QWORD PTR [rbp-0x460],rax
+    1557:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    155e:	48 89 85 a8 fb ff ff 	mov    QWORD PTR [rbp-0x458],rax
+    1565:	f2 0f 10 95 40 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x4c0]
+    156c:	ff 
+    156d:	f2 0f 10 9d 48 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x4b8]
+    1574:	ff 
+    1575:	f2 0f 10 85 a0 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x460]
+    157c:	ff 
+    157d:	f2 0f 10 8d a8 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x458]
+    1584:	ff 
+    1585:	e8 00 00 00 00       	call   158a <main+0x3bf>
+			1586: R_X86_64_PC32	_ZN7numbersmlENS_7complexES0_-0x4
+    158a:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1591:	ff 
+    1592:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    1599:	ff 
+    159a:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    15a1:	48 89 85 b0 fb ff ff 	mov    QWORD PTR [rbp-0x450],rax
+    15a8:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    15af:	48 89 85 b8 fb ff ff 	mov    QWORD PTR [rbp-0x448],rax
+    15b6:	f2 0f 10 95 b0 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x450]
+    15bd:	ff 
+    15be:	f2 0f 10 9d b8 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x448]
+    15c5:	ff 
+    15c6:	f2 0f 10 85 f0 fa ff 	movsd  xmm0,QWORD PTR [rbp-0x510]
+    15cd:	ff 
+    15ce:	f2 0f 10 8d f8 fa ff 	movsd  xmm1,QWORD PTR [rbp-0x508]
+    15d5:	ff 
+    15d6:	e8 00 00 00 00       	call   15db <main+0x410>
+			15d7: R_X86_64_PC32	_ZN7numbersplENS_7complexES0_-0x4
+    15db:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    15e2:	ff 
+    15e3:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    15ea:	ff 
+    15eb:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    15f2:	48 89 85 90 fb ff ff 	mov    QWORD PTR [rbp-0x470],rax
+    15f9:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    1600:	48 89 85 98 fb ff ff 	mov    QWORD PTR [rbp-0x468],rax
+    1607:	f2 0f 10 95 10 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x4f0]
+    160e:	ff 
+    160f:	f2 0f 10 9d 18 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x4e8]
+    1616:	ff 
+    1617:	f2 0f 10 85 90 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x470]
+    161e:	ff 
+    161f:	f2 0f 10 8d 98 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x468]
+    1626:	ff 
+    1627:	e8 00 00 00 00       	call   162c <main+0x461>
+			1628: R_X86_64_PC32	_ZN7numbersmiENS_7complexES0_-0x4
+    162c:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1633:	ff 
+    1634:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    163b:	ff 
+    163c:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    1643:	48 89 85 c0 fb ff ff 	mov    QWORD PTR [rbp-0x440],rax
+    164a:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    1651:	48 89 85 c8 fb ff ff 	mov    QWORD PTR [rbp-0x438],rax
+    1658:	f2 0f 10 95 c0 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x440]
+    165f:	ff 
+    1660:	f2 0f 10 9d c8 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x438]
+    1667:	ff 
+    1668:	f2 0f 10 85 50 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x4b0]
+    166f:	ff 
+    1670:	f2 0f 10 8d 58 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x4a8]
+    1677:	ff 
+    1678:	e8 00 00 00 00       	call   167d <main+0x4b2>
+			1679: R_X86_64_PC32	_ZN7numbersmlENS_7complexES0_-0x4
+    167d:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    1684:	ff 
+    1685:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    168c:	ff 
+    168d:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    1694:	48 89 85 d0 fb ff ff 	mov    QWORD PTR [rbp-0x430],rax
+    169b:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    16a2:	48 89 85 d8 fb ff ff 	mov    QWORD PTR [rbp-0x428],rax
+    16a9:	f2 0f 10 95 d0 fb ff 	movsd  xmm2,QWORD PTR [rbp-0x430]
+    16b0:	ff 
+    16b1:	f2 0f 10 9d d8 fb ff 	movsd  xmm3,QWORD PTR [rbp-0x428]
+    16b8:	ff 
+    16b9:	f2 0f 10 85 00 fb ff 	movsd  xmm0,QWORD PTR [rbp-0x500]
+    16c0:	ff 
+    16c1:	f2 0f 10 8d 08 fb ff 	movsd  xmm1,QWORD PTR [rbp-0x4f8]
+    16c8:	ff 
+    16c9:	e8 00 00 00 00       	call   16ce <main+0x503>
+			16ca: R_X86_64_PC32	_ZN7numbersplENS_7complexES0_-0x4
+    16ce:	f2 0f 11 85 d0 fa ff 	movsd  QWORD PTR [rbp-0x530],xmm0
+    16d5:	ff 
+    16d6:	f2 0f 11 8d d8 fa ff 	movsd  QWORD PTR [rbp-0x528],xmm1
+    16dd:	ff 
+    16de:	48 8b 85 d0 fa ff ff 	mov    rax,QWORD PTR [rbp-0x530]
+    16e5:	48 89 85 00 fb ff ff 	mov    QWORD PTR [rbp-0x500],rax
+    16ec:	48 8b 85 d8 fa ff ff 	mov    rax,QWORD PTR [rbp-0x528]
+    16f3:	48 89 85 08 fb ff ff 	mov    QWORD PTR [rbp-0x4f8],rax
+    16fa:	48 8b 85 90 fb ff ff 	mov    rax,QWORD PTR [rbp-0x470]
+    1701:	48 89 85 10 fb ff ff 	mov    QWORD PTR [rbp-0x4f0],rax
+    1708:	48 8b 85 98 fb ff ff 	mov    rax,QWORD PTR [rbp-0x468]
+    170f:	48 89 85 18 fb ff ff 	mov    QWORD PTR [rbp-0x4e8],rax
+    1716:	83 85 ec fb ff ff 01 	add    DWORD PTR [rbp-0x414],0x1
+    171d:	8b 85 e8 fb ff ff    	mov    eax,DWORD PTR [rbp-0x418]
+    1723:	39 85 ec fb ff ff    	cmp    DWORD PTR [rbp-0x414],eax
+    1729:	0f 9c c0             	setl   al
+    172c:	84 c0                	test   al,al
+    172e:	0f 85 a4 fc ff ff    	jne    13d8 <main+0x20d>
+    1734:	48 8d 8d f0 fb ff ff 	lea    rcx,[rbp-0x410]
+    173b:	48 8d 85 00 fb ff ff 	lea    rax,[rbp-0x500]
+    1742:	ba 00 04 00 00       	mov    edx,0x400
+    1747:	48 89 ce             	mov    rsi,rcx
+    174a:	48 89 c7             	mov    rdi,rax
+    174d:	e8 00 00 00 00       	call   1752 <main+0x587>
+			174e: R_X86_64_PC32	_ZNK7numbers7complex9to_stringEPcm-0x4
+    1752:	48 8d 85 f0 fb ff ff 	lea    rax,[rbp-0x410]
+    1759:	48 89 c6             	mov    rsi,rax
+    175c:	bf 00 00 00 00       	mov    edi,0x0
+			175d: R_X86_64_32	_ZSt4cout
+    1761:	e8 00 00 00 00       	call   1766 <main+0x59b>
+			1762: R_X86_64_PC32	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc-0x4
+    1766:	be 00 00 00 00       	mov    esi,0x0
+			1767: R_X86_64_32	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+    176b:	48 89 c7             	mov    rdi,rax
+    176e:	e8 00 00 00 00       	call   1773 <main+0x5a8>
+			176f: R_X86_64_PC32	_ZNSolsEPFRSoS_E-0x4
+    1773:	b8 00 00 00 00       	mov    eax,0x0
+    1778:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+    177c:	64 48 33 14 25 28 00 	xor    rdx,QWORD PTR fs:0x28
+    1783:	00 00 
+    1785:	74 05                	je     178c <main+0x5c1>
+    1787:	e8 00 00 00 00       	call   178c <main+0x5c1>
+			1788: R_X86_64_PC32	__stack_chk_fail-0x4
+    178c:	c9                   	leave  
+    178d:	c3                   	ret    
+
+000000000000178e <_Z41__static_initialization_and_destruction_0ii>:
+    178e:	55                   	push   rbp
+    178f:	48 89 e5             	mov    rbp,rsp
+    1792:	48 83 ec 10          	sub    rsp,0x10
+    1796:	89 7d fc             	mov    DWORD PTR [rbp-0x4],edi
+    1799:	89 75 f8             	mov    DWORD PTR [rbp-0x8],esi
+    179c:	83 7d fc 01          	cmp    DWORD PTR [rbp-0x4],0x1
+    17a0:	75 2a                	jne    17cc <_Z41__static_initialization_and_destruction_0ii+0x3e>
+    17a2:	81 7d f8 ff ff 00 00 	cmp    DWORD PTR [rbp-0x8],0xffff
+    17a9:	75 21                	jne    17cc <_Z41__static_initialization_and_destruction_0ii+0x3e>
+    17ab:	bf 00 00 00 00       	mov    edi,0x0
+			17ac: R_X86_64_32	.bss
+    17b0:	e8 00 00 00 00       	call   17b5 <_Z41__static_initialization_and_destruction_0ii+0x27>
+			17b1: R_X86_64_PC32	_ZNSt8ios_base4InitC1Ev-0x4
+    17b5:	b8 00 00 00 00       	mov    eax,0x0
+			17b6: R_X86_64_32	_ZNSt8ios_base4InitD1Ev
+    17ba:	ba 00 00 00 00       	mov    edx,0x0
+			17bb: R_X86_64_32	__dso_handle
+    17bf:	be 00 00 00 00       	mov    esi,0x0
+			17c0: R_X86_64_32	.bss
+    17c4:	48 89 c7             	mov    rdi,rax
+    17c7:	e8 00 00 00 00       	call   17cc <_Z41__static_initialization_and_destruction_0ii+0x3e>
+			17c8: R_X86_64_PC32	__cxa_atexit-0x4
+    17cc:	c9                   	leave  
+    17cd:	c3                   	ret    
+
+00000000000017ce <_GLOBAL__sub_I__ZN7numbersplENS_7complexES0_>:
+    17ce:	55                   	push   rbp
+    17cf:	48 89 e5             	mov    rbp,rsp
+    17d2:	be ff ff 00 00       	mov    esi,0xffff
+    17d7:	bf 01 00 00 00       	mov    edi,0x1
+    17dc:	e8 ad ff ff ff       	call   178e <_Z41__static_initialization_and_destruction_0ii>
+    17e1:	5d                   	pop    rbp
+    17e2:	c3                   	ret    
+
+Disassembly of section .text._ZnamPv:
+
+0000000000000000 <_ZnamPv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   8:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+   c:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  10:	5d                   	pop    rbp
+  11:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers7complexC2Edd:
+
+0000000000000000 <_ZN7numbers7complexC1Edd>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   8:	f2 0f 11 45 f0       	movsd  QWORD PTR [rbp-0x10],xmm0
+   d:	f2 0f 11 4d e8       	movsd  QWORD PTR [rbp-0x18],xmm1
+  12:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  16:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  1a:	48 89 10             	mov    QWORD PTR [rax],rdx
+  1d:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  21:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+  25:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+  29:	5d                   	pop    rbp
+  2a:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers7complexC2EPKc:
+
+0000000000000000 <_ZN7numbers7complexC1EPKc>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 10          	sub    rsp,0x10
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  10:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  14:	48 8d 48 08          	lea    rcx,[rax+0x8]
+  18:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+  1c:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  20:	be 00 00 00 00       	mov    esi,0x0
+			21: R_X86_64_32	.rodata
+  25:	48 89 c7             	mov    rdi,rax
+  28:	b8 00 00 00 00       	mov    eax,0x0
+  2d:	e8 00 00 00 00       	call   32 <_ZN7numbers7complexC1EPKc+0x32>
+			2e: R_X86_64_PC32	sscanf-0x4
+  32:	c9                   	leave  
+  33:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers7complex4abs2Ev:
+
+0000000000000000 <_ZNK7numbers7complex4abs2Ev>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   8:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+   c:	f2 0f 10 08          	movsd  xmm1,QWORD PTR [rax]
+  10:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  14:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+  18:	f2 0f 59 c8          	mulsd  xmm1,xmm0
+  1c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  20:	f2 0f 10 50 08       	movsd  xmm2,QWORD PTR [rax+0x8]
+  25:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  29:	f2 0f 10 40 08       	movsd  xmm0,QWORD PTR [rax+0x8]
+  2e:	f2 0f 59 c2          	mulsd  xmm0,xmm2
+  32:	f2 0f 58 c1          	addsd  xmm0,xmm1
+  36:	5d                   	pop    rbp
+  37:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers7complexcoEv:
+
+0000000000000000 <_ZNK7numbers7complexcoEv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 50          	sub    rsp,0x50
+   8:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+   c:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  10:	f2 0f 10 48 08       	movsd  xmm1,QWORD PTR [rax+0x8]
+  15:	f2 0f 10 05 00 00 00 	movsd  xmm0,QWORD PTR [rip+0x0]        # 1d <_ZNK7numbers7complexcoEv+0x1d>
+  1c:	00 
+			19: R_X86_64_PC32	.rodata+0x1c
+  1d:	66 0f 57 c1          	xorpd  xmm0,xmm1
+  21:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  25:	f2 0f 10 10          	movsd  xmm2,QWORD PTR [rax]
+  29:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+  2d:	66 0f 28 c8          	movapd xmm1,xmm0
+  31:	66 0f 28 c2          	movapd xmm0,xmm2
+  35:	48 89 c7             	mov    rdi,rax
+  38:	e8 00 00 00 00       	call   3d <_ZNK7numbers7complexcoEv+0x3d>
+			39: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+  3d:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  41:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+  45:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  49:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  4d:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  51:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  55:	48 89 55 b8          	mov    QWORD PTR [rbp-0x48],rdx
+  59:	f2 0f 10 45 b8       	movsd  xmm0,QWORD PTR [rbp-0x48]
+  5e:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+  62:	f2 0f 10 4d b8       	movsd  xmm1,QWORD PTR [rbp-0x48]
+  67:	c9                   	leave  
+  68:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers7complexngEv:
+
+0000000000000000 <_ZNK7numbers7complexngEv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 50          	sub    rsp,0x50
+   8:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+   c:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  10:	f2 0f 10 48 08       	movsd  xmm1,QWORD PTR [rax+0x8]
+  15:	f2 0f 10 05 00 00 00 	movsd  xmm0,QWORD PTR [rip+0x0]        # 1d <_ZNK7numbers7complexngEv+0x1d>
+  1c:	00 
+			19: R_X86_64_PC32	.rodata+0x1c
+  1d:	66 0f 57 c8          	xorpd  xmm1,xmm0
+  21:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  25:	f2 0f 10 10          	movsd  xmm2,QWORD PTR [rax]
+  29:	f2 0f 10 05 00 00 00 	movsd  xmm0,QWORD PTR [rip+0x0]        # 31 <_ZNK7numbers7complexngEv+0x31>
+  30:	00 
+			2d: R_X86_64_PC32	.rodata+0x1c
+  31:	66 0f 57 c2          	xorpd  xmm0,xmm2
+  35:	48 8d 45 e0          	lea    rax,[rbp-0x20]
+  39:	48 89 c7             	mov    rdi,rax
+  3c:	e8 00 00 00 00       	call   41 <_ZNK7numbers7complexngEv+0x41>
+			3d: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+  41:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  45:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+  49:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  4d:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  51:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  55:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  59:	48 89 55 b8          	mov    QWORD PTR [rbp-0x48],rdx
+  5d:	f2 0f 10 45 b8       	movsd  xmm0,QWORD PTR [rbp-0x48]
+  62:	48 89 45 b8          	mov    QWORD PTR [rbp-0x48],rax
+  66:	f2 0f 10 4d b8       	movsd  xmm1,QWORD PTR [rbp-0x48]
+  6b:	c9                   	leave  
+  6c:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers7complex9to_stringEPcm:
+
+0000000000000000 <_ZNK7numbers7complex9to_stringEPcm>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 20          	sub    rsp,0x20
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  10:	48 89 55 e8          	mov    QWORD PTR [rbp-0x18],rdx
+  14:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  18:	f2 0f 10 48 08       	movsd  xmm1,QWORD PTR [rax+0x8]
+  1d:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  21:	f2 0f 10 00          	movsd  xmm0,QWORD PTR [rax]
+  25:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  29:	be 00 00 00 00       	mov    esi,0x0
+			2a: R_X86_64_32	.rodata+0xa
+  2e:	48 89 c7             	mov    rdi,rax
+  31:	b8 02 00 00 00       	mov    eax,0x2
+  36:	e8 00 00 00 00       	call   3b <_ZNK7numbers7complex9to_stringEPcm+0x3b>
+			37: R_X86_64_PC32	sprintf-0x4
+  3b:	c9                   	leave  
+  3c:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stack6extendEv:
+
+0000000000000000 <_ZN7numbers13complex_stack6extendEv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	41 55                	push   r13
+   6:	41 54                	push   r12
+   8:	53                   	push   rbx
+   9:	48 83 ec 38          	sub    rsp,0x38
+   d:	48 89 7d b8          	mov    QWORD PTR [rbp-0x48],rdi
+  11:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  15:	48 8b 40 08          	mov    rax,QWORD PTR [rax+0x8]
+  19:	48 8d 14 00          	lea    rdx,[rax+rax*1]
+  1d:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  21:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+  25:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  29:	48 8b 40 08          	mov    rax,QWORD PTR [rax+0x8]
+  2d:	48 c1 e0 04          	shl    rax,0x4
+  31:	48 89 c7             	mov    rdi,rax
+  34:	e8 00 00 00 00       	call   39 <_ZN7numbers13complex_stack6extendEv+0x39>
+			35: R_X86_64_PC32	_Znam-0x4
+  39:	48 89 45 d0          	mov    QWORD PTR [rbp-0x30],rax
+  3d:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  41:	4c 8b 60 08          	mov    r12,QWORD PTR [rax+0x8]
+  45:	4c 89 e2             	mov    rdx,r12
+  48:	48 c1 e2 04          	shl    rdx,0x4
+  4c:	48 8b 45 d0          	mov    rax,QWORD PTR [rbp-0x30]
+  50:	48 89 c6             	mov    rsi,rax
+  53:	48 89 d7             	mov    rdi,rdx
+  56:	e8 00 00 00 00       	call   5b <_ZN7numbers13complex_stack6extendEv+0x5b>
+			57: R_X86_64_PC32	_ZnamPv-0x4
+  5b:	48 89 c3             	mov    rbx,rax
+  5e:	48 85 db             	test   rbx,rbx
+  61:	74 38                	je     9b <_ZN7numbers13complex_stack6extendEv+0x9b>
+  63:	48 89 d8             	mov    rax,rbx
+  66:	49 89 c5             	mov    r13,rax
+  69:	49 8d 44 24 ff       	lea    rax,[r12-0x1]
+  6e:	49 89 c4             	mov    r12,rax
+  71:	eb 18                	jmp    8b <_ZN7numbers13complex_stack6extendEv+0x8b>
+  73:	66 0f 57 c9          	xorpd  xmm1,xmm1
+  77:	66 0f 57 c0          	xorpd  xmm0,xmm0
+  7b:	4c 89 ef             	mov    rdi,r13
+  7e:	e8 00 00 00 00       	call   83 <_ZN7numbers13complex_stack6extendEv+0x83>
+			7f: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+  83:	49 83 c5 10          	add    r13,0x10
+  87:	49 83 ec 01          	sub    r12,0x1
+  8b:	49 83 fc ff          	cmp    r12,0xffffffffffffffff
+  8f:	0f 95 c0             	setne  al
+  92:	84 c0                	test   al,al
+  94:	75 dd                	jne    73 <_ZN7numbers13complex_stack6extendEv+0x73>
+  96:	48 89 d8             	mov    rax,rbx
+  99:	eb 03                	jmp    9e <_ZN7numbers13complex_stack6extendEv+0x9e>
+  9b:	48 89 d8             	mov    rax,rbx
+  9e:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+  a2:	48 c7 45 c8 00 00 00 	mov    QWORD PTR [rbp-0x38],0x0
+  a9:	00 
+  aa:	eb 31                	jmp    dd <_ZN7numbers13complex_stack6extendEv+0xdd>
+  ac:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  b0:	48 c1 e0 04          	shl    rax,0x4
+  b4:	48 03 45 d8          	add    rax,QWORD PTR [rbp-0x28]
+  b8:	48 8b 55 b8          	mov    rdx,QWORD PTR [rbp-0x48]
+  bc:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  bf:	48 8b 4d c8          	mov    rcx,QWORD PTR [rbp-0x38]
+  c3:	48 c1 e1 04          	shl    rcx,0x4
+  c7:	48 01 ca             	add    rdx,rcx
+  ca:	48 8b 0a             	mov    rcx,QWORD PTR [rdx]
+  cd:	48 89 08             	mov    QWORD PTR [rax],rcx
+  d0:	48 8b 52 08          	mov    rdx,QWORD PTR [rdx+0x8]
+  d4:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+  d8:	48 83 45 c8 01       	add    QWORD PTR [rbp-0x38],0x1
+  dd:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  e1:	48 8b 40 10          	mov    rax,QWORD PTR [rax+0x10]
+  e5:	48 3b 45 c8          	cmp    rax,QWORD PTR [rbp-0x38]
+  e9:	0f 97 c0             	seta   al
+  ec:	84 c0                	test   al,al
+  ee:	75 bc                	jne    ac <_ZN7numbers13complex_stack6extendEv+0xac>
+  f0:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+  f4:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  f7:	48 85 c0             	test   rax,rax
+  fa:	74 0f                	je     10b <_ZN7numbers13complex_stack6extendEv+0x10b>
+  fc:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+ 100:	48 8b 00             	mov    rax,QWORD PTR [rax]
+ 103:	48 89 c7             	mov    rdi,rax
+ 106:	e8 00 00 00 00       	call   10b <_ZN7numbers13complex_stack6extendEv+0x10b>
+			107: R_X86_64_PC32	_ZdaPv-0x4
+ 10b:	48 8b 45 b8          	mov    rax,QWORD PTR [rbp-0x48]
+ 10f:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+ 113:	48 89 10             	mov    QWORD PTR [rax],rdx
+ 116:	48 83 c4 38          	add    rsp,0x38
+ 11a:	5b                   	pop    rbx
+ 11b:	41 5c                	pop    r12
+ 11d:	41 5d                	pop    r13
+ 11f:	5d                   	pop    rbp
+ 120:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stack10stack_swapERS0_S1_:
+
+0000000000000000 <_ZN7numbers13complex_stack10stack_swapERS0_S1_>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 20          	sub    rsp,0x20
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  10:	48 89 55 e8          	mov    QWORD PTR [rbp-0x18],rdx
+  14:	48 8b 55 e8          	mov    rdx,QWORD PTR [rbp-0x18]
+  18:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  1c:	48 89 d6             	mov    rsi,rdx
+  1f:	48 89 c7             	mov    rdi,rax
+  22:	e8 00 00 00 00       	call   27 <_ZN7numbers13complex_stack10stack_swapERS0_S1_+0x27>
+			23: R_X86_64_PC32	_ZSt4swapIPN7numbers7complexEEvRT_S4_-0x4
+  27:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  2b:	48 8d 50 08          	lea    rdx,[rax+0x8]
+  2f:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  33:	48 83 c0 08          	add    rax,0x8
+  37:	48 89 d6             	mov    rsi,rdx
+  3a:	48 89 c7             	mov    rdi,rax
+  3d:	e8 00 00 00 00       	call   42 <_ZN7numbers13complex_stack10stack_swapERS0_S1_+0x42>
+			3e: R_X86_64_PC32	_ZSt4swapImEvRT_S1_-0x4
+  42:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  46:	48 8d 50 10          	lea    rdx,[rax+0x10]
+  4a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  4e:	48 83 c0 10          	add    rax,0x10
+  52:	48 89 d6             	mov    rsi,rdx
+  55:	48 89 c7             	mov    rdi,rax
+  58:	e8 00 00 00 00       	call   5d <_ZN7numbers13complex_stack10stack_swapERS0_S1_+0x5d>
+			59: R_X86_64_PC32	_ZSt4swapImEvRT_S1_-0x4
+  5d:	c9                   	leave  
+  5e:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stackaSERKS0_:
+
+0000000000000000 <_ZN7numbers13complex_stackaSERKS0_>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	53                   	push   rbx
+   5:	48 83 ec 38          	sub    rsp,0x38
+   9:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+   d:	48 89 75 c0          	mov    QWORD PTR [rbp-0x40],rsi
+  11:	48 8b 55 c0          	mov    rdx,QWORD PTR [rbp-0x40]
+  15:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+  19:	48 89 d6             	mov    rsi,rdx
+  1c:	48 89 c7             	mov    rdi,rax
+  1f:	e8 00 00 00 00       	call   24 <_ZN7numbers13complex_stackaSERKS0_+0x24>
+			20: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+  24:	48 8d 55 d0          	lea    rdx,[rbp-0x30]
+  28:	48 8b 4d c8          	mov    rcx,QWORD PTR [rbp-0x38]
+  2c:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  30:	48 89 ce             	mov    rsi,rcx
+  33:	48 89 c7             	mov    rdi,rax
+  36:	e8 00 00 00 00       	call   3b <_ZN7numbers13complex_stackaSERKS0_+0x3b>
+			37: R_X86_64_PC32	_ZN7numbers13complex_stack10stack_swapERS0_S1_-0x4
+  3b:	48 8b 5d c8          	mov    rbx,QWORD PTR [rbp-0x38]
+  3f:	48 8d 45 d0          	lea    rax,[rbp-0x30]
+  43:	48 89 c7             	mov    rdi,rax
+  46:	e8 00 00 00 00       	call   4b <_ZN7numbers13complex_stackaSERKS0_+0x4b>
+			47: R_X86_64_PC32	_ZN7numbers13complex_stackD1Ev-0x4
+  4b:	48 89 d8             	mov    rax,rbx
+  4e:	48 83 c4 38          	add    rsp,0x38
+  52:	5b                   	pop    rbx
+  53:	5d                   	pop    rbp
+  54:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stackC2Ev:
+
+0000000000000000 <_ZN7numbers13complex_stackC1Ev>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	41 55                	push   r13
+   6:	41 54                	push   r12
+   8:	53                   	push   rbx
+   9:	48 83 ec 18          	sub    rsp,0x18
+   d:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+  11:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  15:	48 c7 40 08 0a 00 00 	mov    QWORD PTR [rax+0x8],0xa
+  1c:	00 
+  1d:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  21:	48 c7 40 10 00 00 00 	mov    QWORD PTR [rax+0x10],0x0
+  28:	00 
+  29:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  2d:	48 8b 58 08          	mov    rbx,QWORD PTR [rax+0x8]
+  31:	48 89 d8             	mov    rax,rbx
+  34:	48 c1 e0 04          	shl    rax,0x4
+  38:	48 89 c7             	mov    rdi,rax
+  3b:	e8 00 00 00 00       	call   40 <_ZN7numbers13complex_stackC1Ev+0x40>
+			3c: R_X86_64_PC32	_Znam-0x4
+  40:	49 89 c5             	mov    r13,rax
+  43:	4c 89 e8             	mov    rax,r13
+  46:	49 89 c4             	mov    r12,rax
+  49:	48 8d 43 ff          	lea    rax,[rbx-0x1]
+  4d:	48 89 c3             	mov    rbx,rax
+  50:	eb 18                	jmp    6a <_ZN7numbers13complex_stackC1Ev+0x6a>
+  52:	66 0f 57 c9          	xorpd  xmm1,xmm1
+  56:	66 0f 57 c0          	xorpd  xmm0,xmm0
+  5a:	4c 89 e7             	mov    rdi,r12
+  5d:	e8 00 00 00 00       	call   62 <_ZN7numbers13complex_stackC1Ev+0x62>
+			5e: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+  62:	49 83 c4 10          	add    r12,0x10
+  66:	48 83 eb 01          	sub    rbx,0x1
+  6a:	48 83 fb ff          	cmp    rbx,0xffffffffffffffff
+  6e:	0f 95 c0             	setne  al
+  71:	84 c0                	test   al,al
+  73:	75 dd                	jne    52 <_ZN7numbers13complex_stackC1Ev+0x52>
+  75:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  79:	4c 89 28             	mov    QWORD PTR [rax],r13
+  7c:	48 83 c4 18          	add    rsp,0x18
+  80:	5b                   	pop    rbx
+  81:	41 5c                	pop    r12
+  83:	41 5d                	pop    r13
+  85:	5d                   	pop    rbp
+  86:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stackC2ERKS0_:
+
+0000000000000000 <_ZN7numbers13complex_stackC1ERKS0_>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	41 55                	push   r13
+   6:	41 54                	push   r12
+   8:	53                   	push   rbx
+   9:	48 83 ec 28          	sub    rsp,0x28
+   d:	48 89 7d c8          	mov    QWORD PTR [rbp-0x38],rdi
+  11:	48 89 75 c0          	mov    QWORD PTR [rbp-0x40],rsi
+  15:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+  19:	48 8b 50 08          	mov    rdx,QWORD PTR [rax+0x8]
+  1d:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  21:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+  25:	48 8b 45 c0          	mov    rax,QWORD PTR [rbp-0x40]
+  29:	48 8b 50 10          	mov    rdx,QWORD PTR [rax+0x10]
+  2d:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  31:	48 89 50 10          	mov    QWORD PTR [rax+0x10],rdx
+  35:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  39:	48 8b 40 08          	mov    rax,QWORD PTR [rax+0x8]
+  3d:	48 c1 e0 04          	shl    rax,0x4
+  41:	48 89 c7             	mov    rdi,rax
+  44:	e8 00 00 00 00       	call   49 <_ZN7numbers13complex_stackC1ERKS0_+0x49>
+			45: R_X86_64_PC32	_Znam-0x4
+  49:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+  4d:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  51:	4c 8b 60 08          	mov    r12,QWORD PTR [rax+0x8]
+  55:	4c 89 e2             	mov    rdx,r12
+  58:	48 c1 e2 04          	shl    rdx,0x4
+  5c:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  60:	48 89 c6             	mov    rsi,rax
+  63:	48 89 d7             	mov    rdi,rdx
+  66:	e8 00 00 00 00       	call   6b <_ZN7numbers13complex_stackC1ERKS0_+0x6b>
+			67: R_X86_64_PC32	_ZnamPv-0x4
+  6b:	48 89 c3             	mov    rbx,rax
+  6e:	48 85 db             	test   rbx,rbx
+  71:	74 38                	je     ab <_ZN7numbers13complex_stackC1ERKS0_+0xab>
+  73:	48 89 d8             	mov    rax,rbx
+  76:	49 89 c5             	mov    r13,rax
+  79:	49 8d 44 24 ff       	lea    rax,[r12-0x1]
+  7e:	49 89 c4             	mov    r12,rax
+  81:	eb 18                	jmp    9b <_ZN7numbers13complex_stackC1ERKS0_+0x9b>
+  83:	66 0f 57 c9          	xorpd  xmm1,xmm1
+  87:	66 0f 57 c0          	xorpd  xmm0,xmm0
+  8b:	4c 89 ef             	mov    rdi,r13
+  8e:	e8 00 00 00 00       	call   93 <_ZN7numbers13complex_stackC1ERKS0_+0x93>
+			8f: R_X86_64_PC32	_ZN7numbers7complexC1Edd-0x4
+  93:	49 83 c5 10          	add    r13,0x10
+  97:	49 83 ec 01          	sub    r12,0x1
+  9b:	49 83 fc ff          	cmp    r12,0xffffffffffffffff
+  9f:	0f 95 c0             	setne  al
+  a2:	84 c0                	test   al,al
+  a4:	75 dd                	jne    83 <_ZN7numbers13complex_stackC1ERKS0_+0x83>
+  a6:	48 89 d8             	mov    rax,rbx
+  a9:	eb 03                	jmp    ae <_ZN7numbers13complex_stackC1ERKS0_+0xae>
+  ab:	48 89 d8             	mov    rax,rbx
+  ae:	48 8b 55 c8          	mov    rdx,QWORD PTR [rbp-0x38]
+  b2:	48 89 02             	mov    QWORD PTR [rdx],rax
+  b5:	48 c7 45 d0 00 00 00 	mov    QWORD PTR [rbp-0x30],0x0
+  bc:	00 
+  bd:	eb 37                	jmp    f6 <_ZN7numbers13complex_stackC1ERKS0_+0xf6>
+  bf:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  c3:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  c6:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+  ca:	48 c1 e2 04          	shl    rdx,0x4
+  ce:	48 01 d0             	add    rax,rdx
+  d1:	48 8b 55 c0          	mov    rdx,QWORD PTR [rbp-0x40]
+  d5:	48 8b 12             	mov    rdx,QWORD PTR [rdx]
+  d8:	48 8b 4d d0          	mov    rcx,QWORD PTR [rbp-0x30]
+  dc:	48 c1 e1 04          	shl    rcx,0x4
+  e0:	48 01 ca             	add    rdx,rcx
+  e3:	48 8b 0a             	mov    rcx,QWORD PTR [rdx]
+  e6:	48 89 08             	mov    QWORD PTR [rax],rcx
+  e9:	48 8b 52 08          	mov    rdx,QWORD PTR [rdx+0x8]
+  ed:	48 89 50 08          	mov    QWORD PTR [rax+0x8],rdx
+  f1:	48 83 45 d0 01       	add    QWORD PTR [rbp-0x30],0x1
+  f6:	48 8b 45 c8          	mov    rax,QWORD PTR [rbp-0x38]
+  fa:	48 8b 40 10          	mov    rax,QWORD PTR [rax+0x10]
+  fe:	48 3b 45 d0          	cmp    rax,QWORD PTR [rbp-0x30]
+ 102:	0f 97 c0             	seta   al
+ 105:	84 c0                	test   al,al
+ 107:	75 b6                	jne    bf <_ZN7numbers13complex_stackC1ERKS0_+0xbf>
+ 109:	48 83 c4 28          	add    rsp,0x28
+ 10d:	5b                   	pop    rbx
+ 10e:	41 5c                	pop    r12
+ 110:	41 5d                	pop    r13
+ 112:	5d                   	pop    rbp
+ 113:	c3                   	ret    
+
+Disassembly of section .text._ZN7numbers13complex_stackD2Ev:
+
+0000000000000000 <_ZN7numbers13complex_stackD1Ev>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 10          	sub    rsp,0x10
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  10:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  13:	48 85 c0             	test   rax,rax
+  16:	74 0f                	je     27 <_ZN7numbers13complex_stackD1Ev+0x27>
+  18:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  1c:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  1f:	48 89 c7             	mov    rdi,rax
+  22:	e8 00 00 00 00       	call   27 <_ZN7numbers13complex_stackD1Ev+0x27>
+			23: R_X86_64_PC32	_ZdaPv-0x4
+  27:	c9                   	leave  
+  28:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers13complex_stackpsEv:
+
+0000000000000000 <_ZNK7numbers13complex_stackpsEv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+   8:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+   c:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+   f:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  13:	48 8b 40 10          	mov    rax,QWORD PTR [rax+0x10]
+  17:	48 83 e8 01          	sub    rax,0x1
+  1b:	48 c1 e0 04          	shl    rax,0x4
+  1f:	48 01 d0             	add    rax,rdx
+  22:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+  25:	48 89 55 f0          	mov    QWORD PTR [rbp-0x10],rdx
+  29:	48 8b 40 08          	mov    rax,QWORD PTR [rax+0x8]
+  2d:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  31:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  35:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  39:	48 89 55 c8          	mov    QWORD PTR [rbp-0x38],rdx
+  3d:	f2 0f 10 45 c8       	movsd  xmm0,QWORD PTR [rbp-0x38]
+  42:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  46:	f2 0f 10 4d c8       	movsd  xmm1,QWORD PTR [rbp-0x38]
+  4b:	5d                   	pop    rbp
+  4c:	c3                   	ret    
+
+Disassembly of section .text._ZNK7numbers13complex_stackcoEv:
+
+0000000000000000 <_ZNK7numbers13complex_stackcoEv>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 10          	sub    rsp,0x10
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  10:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  14:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  18:	48 89 d6             	mov    rsi,rdx
+  1b:	48 89 c7             	mov    rdi,rax
+  1e:	e8 00 00 00 00       	call   23 <_ZNK7numbers13complex_stackcoEv+0x23>
+			1f: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+  23:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  27:	48 8b 40 10          	mov    rax,QWORD PTR [rax+0x10]
+  2b:	48 8d 50 ff          	lea    rdx,[rax-0x1]
+  2f:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  33:	48 89 50 10          	mov    QWORD PTR [rax+0x10],rdx
+  37:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  3b:	c9                   	leave  
+  3c:	c3                   	ret    
+
+Disassembly of section .text._ZN7numberslsENS_13complex_stackENS_7complexE:
+
+0000000000000000 <_ZN7numberslsENS_13complex_stackENS_7complexE>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 20          	sub    rsp,0x20
+   8:	48 89 7d f8          	mov    QWORD PTR [rbp-0x8],rdi
+   c:	48 89 75 f0          	mov    QWORD PTR [rbp-0x10],rsi
+  10:	f2 0f 11 45 e0       	movsd  QWORD PTR [rbp-0x20],xmm0
+  15:	f2 0f 11 4d e8       	movsd  QWORD PTR [rbp-0x18],xmm1
+  1a:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  1e:	48 8b 50 10          	mov    rdx,QWORD PTR [rax+0x10]
+  22:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  26:	48 8b 40 08          	mov    rax,QWORD PTR [rax+0x8]
+  2a:	48 39 c2             	cmp    rdx,rax
+  2d:	75 0c                	jne    3b <_ZN7numberslsENS_13complex_stackENS_7complexE+0x3b>
+  2f:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  33:	48 89 c7             	mov    rdi,rax
+  36:	e8 00 00 00 00       	call   3b <_ZN7numberslsENS_13complex_stackENS_7complexE+0x3b>
+			37: R_X86_64_PC32	_ZN7numbers13complex_stack6extendEv-0x4
+  3b:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  3f:	48 8b 08             	mov    rcx,QWORD PTR [rax]
+  42:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  46:	48 8b 50 10          	mov    rdx,QWORD PTR [rax+0x10]
+  4a:	48 89 d0             	mov    rax,rdx
+  4d:	48 c1 e0 04          	shl    rax,0x4
+  51:	48 01 c8             	add    rax,rcx
+  54:	48 8b 4d e0          	mov    rcx,QWORD PTR [rbp-0x20]
+  58:	48 89 08             	mov    QWORD PTR [rax],rcx
+  5b:	48 8b 4d e8          	mov    rcx,QWORD PTR [rbp-0x18]
+  5f:	48 89 48 08          	mov    QWORD PTR [rax+0x8],rcx
+  63:	48 83 c2 01          	add    rdx,0x1
+  67:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  6b:	48 89 50 10          	mov    QWORD PTR [rax+0x10],rdx
+  6f:	48 8b 55 f0          	mov    rdx,QWORD PTR [rbp-0x10]
+  73:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  77:	48 89 d6             	mov    rsi,rdx
+  7a:	48 89 c7             	mov    rdi,rax
+  7d:	e8 00 00 00 00       	call   82 <_ZN7numberslsENS_13complex_stackENS_7complexE+0x82>
+			7e: R_X86_64_PC32	_ZN7numbers13complex_stackC1ERKS0_-0x4
+  82:	48 8b 45 f8          	mov    rax,QWORD PTR [rbp-0x8]
+  86:	c9                   	leave  
+  87:	c3                   	ret    
+
+Disassembly of section .text._ZSt4swapIPN7numbers7complexEEvRT_S4_:
+
+0000000000000000 <_ZSt4swapIPN7numbers7complexEEvRT_S4_>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+   8:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+   c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  10:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  13:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  17:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  1b:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+  1e:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  22:	48 89 10             	mov    QWORD PTR [rax],rdx
+  25:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  29:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+  2d:	48 89 10             	mov    QWORD PTR [rax],rdx
+  30:	5d                   	pop    rbp
+  31:	c3                   	ret    
+
+Disassembly of section .text._ZSt4swapImEvRT_S1_:
+
+0000000000000000 <_ZSt4swapImEvRT_S1_>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 89 7d e8          	mov    QWORD PTR [rbp-0x18],rdi
+   8:	48 89 75 e0          	mov    QWORD PTR [rbp-0x20],rsi
+   c:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  10:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  13:	48 89 45 f8          	mov    QWORD PTR [rbp-0x8],rax
+  17:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  1b:	48 8b 10             	mov    rdx,QWORD PTR [rax]
+  1e:	48 8b 45 e8          	mov    rax,QWORD PTR [rbp-0x18]
+  22:	48 89 10             	mov    QWORD PTR [rax],rdx
+  25:	48 8b 45 e0          	mov    rax,QWORD PTR [rbp-0x20]
+  29:	48 8b 55 f8          	mov    rdx,QWORD PTR [rbp-0x8]
+  2d:	48 89 10             	mov    QWORD PTR [rax],rdx
+  30:	5d                   	pop    rbp
+  31:	c3                   	ret    

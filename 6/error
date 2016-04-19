@@ -1,0 +1,33 @@
+8.cpp:66:29: error: ISO C++ forbids declaration of ‘operator=’ with no type [-fpermissive]
+ String::operator=(String str) {
+                             ^
+8.cpp:66:1: error: prototype for ‘int String::operator=(String)’ does not match any in class ‘String’
+ String::operator=(String str) {
+ ^
+8.cpp:56:13: error: candidate is: String& String::operator=(String)
+     String& operator=(String);
+             ^
+8.cpp:70:37: error: ISO C++ forbids declaration of ‘operator+=’ with no type [-fpermissive]
+ String::operator+=(const String &str) {
+                                     ^
+8.cpp:70:1: error: prototype for ‘int String::operator+=(const String&)’ does not match any in class ‘String’
+ String::operator+=(const String &str) {
+ ^
+8.cpp:57:13: error: candidate is: String& String::operator+=(const String&)
+     String& operator+=(const String &);
+             ^
+8.cpp: In member function ‘char& String::operator[](int)’:
+8.cpp:82:23: error: ‘str_buffer’ was not declared in this scope
+         str_buffer_ = str_buffer;
+                       ^
+8.cpp:84:24: error: ‘class StringBuffer’ has no member named ‘buffer’
+     return str_buffer_.buffer[i];
+                        ^
+8.cpp: In function ‘std::ostream& operator<<(std::ostream&, const String&)’:
+8.cpp:9:11: error: ‘char* StringBuffer::buffer_’ is private
+     char *buffer_;
+           ^
+8.cpp:88:28: error: within this context
+     out << str.str_buffer_.buffer_;
+                            ^
+make: *** [8.out] Error 1

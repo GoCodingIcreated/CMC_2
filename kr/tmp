@@ -1,0 +1,83 @@
+int main() {
+    long long x = 1;
+    int y = 2;
+    
+    //OK
+    try {
+        Range r1(x, y);
+        std::cout << r1.to_string() << std::endl; 
+    } catch(...) {std::cout << "1" << std::endl;}
+    
+    //NO
+    try {
+        Range r2("");
+        std::cout << r2.to_string() << std::endl;
+    } catch(...) {std::cout << "2" << std::endl;}
+    
+    //NO
+    try {
+        Range r3("(1,2");
+        std::cout << r3.to_string() << std::endl;
+    } catch(...) {std::cout << "3" << std::endl;}
+    
+    //NO
+    try {
+        Range r4("(1)");
+        std::cout << r4.to_string() << std::endl;
+    }
+    catch(...) {std::cout << "4" << std::endl;}
+    
+    //NO
+    try {
+        Range r5("(1 2)");
+        std::cout << r5.to_string() << std::endl;
+    } catch(...) {std::cout << "5" << std::endl;}
+    
+    //NO
+    try {
+        Range r6("(1,2)z");
+        std::cout << r6.to_string() << std::endl;
+    } catch(...) {std::cout << "6" << std::endl;}
+
+    //NO
+    try {
+        Range r7("(10000000000000,10000000000002");
+        std::cout << r7.to_string() << std::endl;
+    } catch(...) {std::cout << "7" << std::endl;}
+    
+    //NO
+    try {
+        Range r8("-20000000000000001,-20000000000000000");
+        std::cout << r8.to_string() << std::endl;
+    } catch(...) {std::cout << "8" << std::endl;}
+    
+    //NO
+    try {
+        Range r9("(2147483648,2147483648");
+        std::cout << r9.to_string() << std::endl;
+    } catch(...) {std::cout << "9" << std::endl;}
+        
+    //NO
+    try {
+        Range r10("(0,2147483648)");
+        std::cout << r10.to_string() << std::endl;
+    } catch(...) {std::cout << "10" << std::endl;}
+
+    //YES
+    try {
+        Range r11("(-2147483648,-2147483648)");
+        std::cout << r11.to_string() << std::endl;
+    } catch(...) {std::cout << "11" << std::endl;}
+        
+    //YES
+    try {
+        Range r12("(-2147483648,2147483647)");
+        std::cout << r12.to_string() << std::endl;
+    } catch(...) {std::cout << "12" << std::endl;}
+    
+    //NO
+    try {
+        Range r13("(1,0)");
+        std::cout << r13.to_string() << std::endl;
+    } catch(...) {std::cout << "13" << std::endl;}
+}
