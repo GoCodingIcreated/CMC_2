@@ -1,2 +1,3 @@
 # CMC_2
-4 module at MSU CMC studing
+
+This repository includes programs that have been written during education on CMC MSU, 4th module.
